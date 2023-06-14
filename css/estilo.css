@@ -19,6 +19,7 @@ body{
 p, h1, h2, h3, h4, h5, h6, a, button{
   font-size: 100%;
   margin: 0px;
+  padding: 0px;
 }
 
 a{
@@ -112,68 +113,26 @@ p, ul{
   width: 93px;
 }
 
-.bannerPrincipal{
-  height: 588px;
-  overflow: hidden;
-}
-
-.tarjetaBanner{
-  height: 100%;
-  position: relative;
-}
-
-.imgCarrusel{
-  height: 100%;
-}
-
 .flechasBanner{
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
-}
-
-.flechasBanner a{
   color: white;
   font-size: 35px;
 }
 
-.puntosBanner{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 5px 0px;
+.flechaD{  
+  justify-content: end;
 }
 
-.puntosBanner a{
-  color: white;
-  font-size: 35px;
-  padding: 0px 5px;
-}
-
-#tarjetaBanner-1{
-  background-image: url("../imagenes/banner.png");    
-  background-position: center;
-  background-size: cover;
-}
-
-#tarjetaBanner-2{
-  background-image: url("../imagenes/banner.png");    
-  background-position: center;
-  background-size: cover;
-}
-
-#tarjetaBanner-3{
-  background-image: url("../imagenes/banner.png");    
-  background-position: center;
-  background-size: cover;
+.carousel .carousel-indicators button{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
 .seccionProductos{
@@ -201,6 +160,11 @@ p, ul{
 
 .producto img{
   padding-bottom: 8px;
+}
+
+.producto p{
+  text-align: center;
+  width: 90%;
 }
 
 .frase{
@@ -423,8 +387,9 @@ footer p{
     grid-area: migas;
 }
 
-.migas ul li{
-    display: inline-block;
+.breadcrumb{
+  --bs-breadcrumb-divider-color: #F11585;
+  --bs-breadcrumb-item-active-color: #F11585;
 }
 
 .headerCategoria{
@@ -524,6 +489,7 @@ footer p{
   font-weight: 700;
   font-size: 32px;
   padding-bottom: 25px;
+  width: 92%;
 }
 
 .iconoFav{
@@ -1218,6 +1184,7 @@ footer p{
     height: 45px;
     width: 45px;
     top: 20px;
+    line-height: 0px;
   }
   
   .fecha1{
