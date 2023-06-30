@@ -1,0 +1,68 @@
+section{
+  .headerCategoria{
+    @include flex-between;
+    align-items: center;
+    margin: 0px 40px 30px 40px;
+
+    .cajaFyO{
+      @include flex-between;
+      width: 348px;
+
+      div .filtro{
+        @include boton;
+        font-size: 14px;
+        width: 93px;
+        height: 30px;
+      }
+
+      div .ordenar{
+        font-family: $fuentePrincipal;
+        font-size: 14px;
+        font-weight: 600;
+        color:$colorPrincipal;
+        border: solid 2px $colorPrincipal;
+        outline: none;
+        width: 240px;
+        height: 30px;
+      }
+    }
+  }
+
+  .tituloPagina{
+    font-family: $fuenteSecundaria;
+    font-weight: 900;
+    font-size: 32px;
+  }
+
+  .contenedorProductos{
+    @include flex-between;
+    flex-wrap: wrap;
+    margin: 0px 40px;
+
+    .producto{
+      display: flex;
+      @include column-center;
+      width: 306px;
+      text-align: center;    
+      font-size: 16px;
+
+      img{
+        padding-bottom: 8px;
+      }
+
+      a{
+        width: 85%;
+      }
+    }
+  }
+
+  .aire{
+    margin-bottom: 35px;
+  }
+
+  .mostrando{
+    margin: 10px 40px 38px 40px;
+    font-size: 14px;
+    text-align: center;
+  }
+}

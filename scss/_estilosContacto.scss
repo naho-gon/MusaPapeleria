@@ -1,0 +1,91 @@
+.infoContacto{
+  grid-area: infoContacto;
+  justify-self: end;
+  width: 528px;
+  margin: 37px 40px 37px 40px;
+
+  .tituloContacto{
+    padding-bottom: 13px;
+    font-family: $fuenteSecundaria;
+    font-weight: 900;
+    font-size: 40px;
+  }
+
+  .datosContacto{
+    padding-bottom: 42px;
+  }
+
+  .tituloDatos{
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+}
+
+.enviarContacto{
+  grid-area: enviarContacto;
+  width: 502px;
+  margin: 37px 40px 37px 50px;
+  align-self: end;
+
+  .contactoSubTitulo{
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 24.7px;
+  }
+
+  form{
+    div .nYaInput{
+      width: 502px;
+    }
+
+    .emailTel{
+      @include flex-between;
+
+      div .emailContacto, div .telContacto{
+        width: 246px;
+      }
+    }
+
+    div .mensajeContacto{
+      border: solid 1px $colorPrincipal;
+      margin-bottom: 24.7px;
+      outline: none;
+      padding-left: 15px;
+      padding-top: 15px;
+      width: 502px;
+      height: 82px;
+      font-family: $fuentePrincipal;
+      font-size: 14px;
+      resize: none;
+    }
+
+    input{
+      border: solid 1px $colorPrincipal;
+      margin-bottom: 24.7px;
+      padding-left: 15px;
+      outline: none;
+      font-family: $fuentePrincipal;
+      font-size: 14px;    
+      height: 38px;
+    }
+
+    .enviarBoton{
+      @include boton;
+      font-family: $fuentePrincipal;
+      border: none;
+      width: 202px;
+      height: 40px;
+      cursor: pointer;
+    }
+  }
+}
+
+.tituloEnviarMensaje{
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.nLcontacto{
+  grid-area: newsLetter;
+}

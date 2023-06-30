@@ -1,0 +1,43 @@
+$colorPrincipal: #F11585;
+$colorSecundario: #fdbfde;
+$letrasBlancas: white;
+
+$fuentePrincipal: 'Montserrat', sans-serif;
+$fuenteSecundaria: "Regard";
+
+$margenPagina: 0px 40px;
+$margenresponsive: 0px 30px;
+
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flex-between{    
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin column-center{
+  flex-direction: column;
+  align-items: center;
+}
+
+@mixin boton{
+  background-color: $colorPrincipal;
+  border: none;
+  text-align: center; 
+  font-family: $fuentePrincipal;
+  font-weight: 700;
+  color: $letrasBlancas;
+  font-size: 18px;
+}
+
+@mixin titulo{
+  font-family: $fuenteSecundaria;  
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  padding: 20px 0px;
+}

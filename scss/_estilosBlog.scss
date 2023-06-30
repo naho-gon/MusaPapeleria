@@ -1,0 +1,79 @@
+.articulosBlog{
+  grid-area: articulos;
+  margin-left: 40px;    
+  justify-self: end;
+
+  .contenedorArticulos{
+    @include flex-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    width: 1039px;
+  }
+}
+
+.tarjetaArticulop{
+  width: 336px;
+  position: relative;
+
+  a img{
+    padding-bottom: 18px;
+  }
+
+  h5{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 12px;
+  }
+
+  .textoTarjetaP{
+    font-size: 14px;
+    padding-bottom: 12px;
+    width: 325px;
+  }
+}
+
+.categorias{
+  grid-area: categorias;
+  display: inline-block;
+  width: 190px;
+  margin: 65px 40px 0px 40px;
+  font-size: 22px;
+
+  h4{
+    padding-bottom: 20px;
+    font-weight: 900;
+  }
+
+  a{
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 15px;
+  }
+}
+
+.paginacion{
+  grid-area: paginacion;
+  margin: 0px 0px 35px 40px;
+
+  ul{
+    @include flex-center;
+
+    li{
+      @include flex-center;
+      align-items: center;
+      border: solid 1px $colorPrincipal;
+      border-radius: 50px;
+      font-size: 14px;
+      margin-left: 5px;
+      margin-right: 5px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}
+
+.pagActual{
+  background-color: $colorPrincipal;
+  color: $letrasBlancas;
+}

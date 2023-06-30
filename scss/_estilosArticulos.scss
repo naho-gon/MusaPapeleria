@@ -1,0 +1,147 @@
+.articuloBlog{
+  grid-area: contenido;
+  justify-self: end;
+  width: 893px;
+  margin-left: 40px;
+
+  .tituloArticulo{
+    margin-bottom: 15px;
+
+    h1{
+      font-weight: 700;
+      font-size: 40px;
+      padding-bottom: 10px;
+    }
+
+    .infoArticulo{
+      @include flex-between;
+      align-items: end;
+    }
+  }
+
+  section .infoFoto{
+    font-size: 14px;
+    margin: 10px 0px 30px 0px;
+  }
+
+  .textoArticulo{
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    p{
+      padding-bottom: 15px;
+    }
+  }
+}
+
+.articulosRyD{
+  grid-area: articulosRyD;
+  margin: $margenPagina;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+
+  .articulosR{
+    margin-bottom: 20px;
+  }
+}
+
+.articulosR h3, .articulosD h3{
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.comentarios{
+  grid-area: comentarios;
+  width: 893px;
+  margin-left: 40px;
+  justify-self: end;
+
+  h4{
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .comentario{
+    display: flex;
+    margin: 15px 0px;
+    border-bottom: solid 1px $colorPrincipal;
+  }
+
+  .comentarioUltimo{
+    display: flex;
+    margin-top: 15px;
+  }
+
+  .comentario img, .comentarioUltimo img{
+    width: 93px;
+    height: 93px;
+    border-radius: 50px;
+    margin-right: 15px;
+  }
+}
+
+.nombreComentario{
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.textoComentario{
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.fechaComentario{
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.enviarComentario{
+  width: 893px;
+  background-color: $colorSecundario;
+  color: $colorPrincipal;
+  margin-bottom: 40px;
+  padding: 35px 30px 35px 30px;
+
+  h4{
+    font-size: 28px;
+    font-weight: 700;
+    padding-bottom: 20px;
+  }
+
+  p{
+    padding-bottom: 20px;
+  }
+
+  h6{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 10px;
+  }
+
+  form{
+    .dejarComentario{
+      margin-bottom: 15px;
+      padding: 18px 0px 0px 18px;
+      height: 185px;
+      width: 833px;
+      font-family: $fuentePrincipal;
+      border: none;
+      outline: none;
+      resize: none;
+    }
+
+    .bArticulo{
+      @include boton;
+      margin-left: 631px;
+      width: 202px;
+      height: 40px;
+      border: none;
+      color: $letrasBlancas;
+      font-size: 18px;
+    }
+  }
+}

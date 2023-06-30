@@ -1,0 +1,268 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: $fuenteSecundaria;
+  src: url(../fonts/Regards.ttf);
+}
+
+body{
+  font-family: $fuentePrincipal;
+  font-size: 16px;
+  color: $colorPrincipal;
+  font-weight: 600;
+}
+
+button, h1, h2, h3, h4, h5, h6{
+  font-size: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+p{
+  @extend button;
+  margin-bottom: 0rem;  
+  padding: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+ul{
+  @extend p;
+  list-style-type: none;
+  padding-inline-start: 0px;
+}
+
+li{
+  display: block;
+  text-align: start;
+}
+
+a{
+  @extend button;
+  text-decoration-line: none;
+  color: $colorPrincipal;
+}
+
+
+
+// // // // // // HEADER
+
+header{  
+  grid-area: header;
+  box-shadow: 0px -20px 50px $colorPrincipal;
+  overflow: hidden;
+  width: 100%;
+}
+
+.oferta{
+  @include flex-center;
+  align-items: center;
+  background-color: $colorPrincipal;
+  color: $letrasBlancas;
+  font-size: 18px;
+  padding: 8px 40px;
+}
+
+.navCategorias{
+  width: 100%;
+  justify-content: center; 
+  flex-wrap: wrap;
+  background-color: white;
+  font-size: 18px;
+
+  .menu{
+    @include flex-between;
+    align-items: center;
+    padding: 0px 40px;
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    font-size: 24px;
+
+    .search{
+      width: 93px;
+    }
+
+    .logo{
+      align-items: center;
+    }
+
+    .iconosMenu{
+      @include flex-between;
+      width: 93px;
+    }
+  }
+
+  .navbar-nav{
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 30px;
+
+    form{
+      .form-control, .formButton{
+        display: none;
+      }
+    }
+
+    .nav-link{    
+      margin: 0px 20px;
+      color: $colorPrincipal;
+
+      &:hover{
+        color: $colorPrincipal;
+      }
+    }
+  }
+}
+
+
+
+// // // // // // BANNER PRINCIPAL
+
+.carousel-indicators .b{
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.flechasBanner{
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  color: $letrasBlancas;
+  font-size: 35px; 
+}
+
+.flechaD{  
+  justify-content: end;
+}
+
+
+
+// // // // // // BANNER CATEGORIAS/BLOG
+
+.banner{
+  background-image: url("../imagenes/banner.png");
+  height: 588px;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+// // // // // // MIGAS
+
+.migas{    
+  margin: 30px 40px;
+  grid-area: migas;
+
+  .breadcrumb{
+    --bs-breadcrumb-divider-color: #F11585;
+    --bs-breadcrumb-item-active-color: #F11585;
+  }
+}
+
+
+
+// // // // // // NEWS LETTER
+
+.newsLetter{
+  background-color: $colorSecundario;
+  text-align: center;
+  height: 285px;
+  padding: 0px 40px;
+  @include flex-center;
+  @include column-center;  
+
+  .tituloNL{
+    font-size: 40px;
+    font-family: $fuenteSecundaria;
+    font-weight: 900;
+    padding-bottom: 5px;
+  }
+
+  .textoNL{
+    width: 852px;
+    font-size: 20px;
+    padding-bottom: 30px;
+  }
+
+  .formSubs{
+    display: flex;
+
+    .email{
+      font-family: $fuentePrincipal;
+      border: none;
+      outline: none;
+      width: 357px;
+      height: 50px;
+      padding-left: 10px;
+    }
+
+    .subs{
+      @include boton;
+      border: none;
+      width: 170px;
+      height: 50px;
+    }
+  }
+}
+
+
+
+// // // // // // FOOTER
+
+footer{
+  grid-area: footer;
+  background-color: $colorPrincipal;
+  color: $letrasBlancas;
+
+  .footer{
+    @include flex-between;
+    margin: $margenPagina;
+    padding: 50px 0px;
+    flex-wrap: wrap;
+  
+    .infoFooter{
+      width: 220px;
+  
+      h6{
+        font-size: 22px;
+        padding-bottom: 25px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  a{
+    color: $letrasBlancas;
+    font-size: 18px;
+  }
+
+  li{    
+    padding-bottom: 13px;
+    font-weight: 500;
+  }
+
+  .piePagina{
+    text-align: center;
+    padding-bottom: 21px;
+  }  
+}
+
+.espacioRedes{  
+  @include flex-between;
+  width: 201px;
+
+  .redes{
+    font-size: 39px;
+  }
+}

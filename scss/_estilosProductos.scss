@@ -1,0 +1,167 @@
+.fotosProductos{
+  grid-area: fotosProductos;
+  margin-left: 40px;
+  justify-self: end;
+
+  .fotoGrande{
+    padding-bottom: 20px;
+  }
+
+  .fotosSecundarias{
+    @include flex-between;
+  }
+}
+
+.areaProductos{
+  grid-area: infoProducto;
+  margin: 0px 40px 0px 30px;
+  width: 420px;
+
+  .infoProducto{
+    position: relative;
+
+    .iconoFav{
+      font-weight: 700;
+      font-size: 32px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+    }
+
+    .precio{
+      font-weight: 700;
+      font-size: 32px;
+      padding-bottom: 20px;
+    }
+
+    .descripcionInfo{
+      padding-bottom: 25px;
+    }
+
+    div{
+      div .circulo{
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      div .formato{
+        font-family: $fuentePrincipal;
+        font-size: 14px;
+        color: $colorPrincipal;
+        border: solid 2px $colorPrincipal;
+        width: 202px;
+        height: 38px;
+        margin-bottom: 25px;
+        outline: none;
+      }
+
+      .cajaCarrito{    
+        display: flex;  
+        
+        .contador{
+          font-family: $fuentePrincipal;
+          font-size: 14px;
+          color: $colorPrincipal;
+          border: solid 2px $colorPrincipal;
+          width: 93px;
+          height: 50px;
+          padding-left: 10px;
+          outline: none;
+        }
+
+        .carrito{
+          @include boton;
+          height: 50px;
+          width: 310px;
+          font-size: 20px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}
+
+.tituloProducto{
+  font-weight: 700;
+  font-size: 32px;
+  padding-bottom: 25px;
+  width: 92%;
+}
+
+.elegir{
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#c1{
+  background-color: rgb(244, 124, 186);
+}
+
+#c2{
+  background-color: rgb(195, 234, 247);
+}
+
+#c3{
+  background-color: rgb(166, 249, 166);
+}
+
+#c4{
+  background-color: rgb(241, 197, 116);
+}
+
+#c5{
+  background-color: rgb(240, 108, 108);
+}
+
+.sobreProducto{
+  grid-area: sobreProducto;
+  display: flex;
+  align-items: center;
+  margin: 35px 0px 20px 40px;
+  width: 818px;
+  justify-self: end;
+
+  article{    
+    .tamanioDescripcion{  
+      width: 744px;
+    }
+
+    .pantallaNo{
+      display: none;
+    }
+  }
+}
+
+.descripcion{
+  font-size: 18px;
+  padding-bottom: 20px;
+  width: 390px;
+}
+
+.especificaciones{
+  grid-area: especificaciones;
+  display: flex;
+  margin: 35px 40px 35px 30px;
+
+  article .especificacionItem{
+    display: flex;
+    width: 420px;
+
+    .icono{
+      width: 24px;
+      height: 24px;
+      margin-right: 15px;
+    }
+  }
+}
+
+.aireProducto{
+  grid-area: gustarte;
+  margin-bottom: 35px;
+}

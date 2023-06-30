@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metaetiquetas -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Organiza, crea y vive bonito... con la ayuda de nuestra papelería bonita, útiles entre otros. No te pierdas visitar nuestra tienda online">
+  <meta name="keywords" content="papeleria, papeleria bonita, papeleria montevideo, papeleria centro, papeleria artesanal, cuadernos, cuadernos lindos, papeleria musa, agenda, bullet journal">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
@@ -11,7 +14,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="../imagenes/favicon.png">
-  <link rel="stylesheet" href="../css/estilo.css">
+  <link rel="stylesheet" href="../css/style.css">
 
   <title>Musa Papelería | Contacto</title>
 </head>
@@ -55,10 +58,10 @@
             <form class="d-flex" role="search">
               <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
         
-              <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+              <button class="btn btn-outline-success formButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
     
-            <li class="nav-item"><a class="nav-link" href="../paginas/categoriaNuevo.html">NUEVO</a></li>
+            <li class="nav-item"><a class="nav-link" href="categoriaNuevo.html">NUEVO</a></li>
             <li class="nav-item"><a class="nav-link" href="#">AGENDAS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">ESCRIBIR</a></li>
             <li class="nav-item"><a class="nav-link" href="#">PLANNERS</a></li>
@@ -74,16 +77,16 @@
   <section class="infoContacto">
     <h1 class="tituloContacto">CONTACTO</h1>
 
-    <p>Queremos brindarte la mejor atención, por eso te dejamos varias formas por las que te puedes comunicar con nosotros.</p>
+    <p class="datosContacto">Queremos brindarte la mejor atención, por eso te dejamos varias formas por las que te puedes comunicar con nosotros.</p>
 
-    <h3>Horario:</h3>
-    <p>De 09:30 hs hasta 17:30 hs</p>
+    <h3 class="tituloDatos">Horario:</h3>
+    <p class="datosContacto">De 09:30 hs hasta 17:30 hs</p>
 
-    <h3>Teléfono</h3>
-    <p>+598 123 123 123</p>
+    <h3 class="tituloDatos">Teléfono</h3>
+    <p class="datosContacto">+598 123 123 123</p>
 
-    <h3>Correo electrónico</h3>
-    <p>info@musapapeleria.com.uy</p>
+    <h3 class="tituloDatos">Correo electrónico</h3>
+    <p class="datosContacto">info@musapapeleria.com.uy</p>
 
     <div class="espacioRedes">
       <a class="redes" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
@@ -101,40 +104,40 @@
     
     <form action="">
       <div>
-        <h4>Nombre completo *</h4>
+        <h4 class="tituloEnviarMensaje">Nombre completo *</h4>
         <input type="text" class="nYaInput" required placeholder="Nombre y apellido">
       </div>
 
       <div class="emailTel">
         <div>
-          <h4>E-mail *</h4>
+          <h4 class="tituloEnviarMensaje">E-mail *</h4>
           <input type="email" required placeholder="E-mail" class="emailContacto" >
         </div>
   
         <div>
-          <h4>Teléfono *</h4>
+          <h4 class="tituloEnviarMensaje">Teléfono *</h4>
           <input type="tel" pattern="[0-9]{9}" required placeholder="Número de teléfono" class="telContacto">
         </div>
       </div>
 
       <div>
-        <h4>Mensaje *</h4>
-        <textarea class="mensajeContacto" placeholder="Mensaje que nos quieres dejar" required name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <h4 class="tituloEnviarMensaje">Mensaje *</h4>
+        <textarea class="mensajeContacto" placeholder="Mensaje que nos quieres enviar" required name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
       </div>    
 
-      <button type="submit" class="boton enviarBoton">ENVIAR</button>
+      <button type="submit" class="enviarBoton">ENVIAR</button>
     </form>
   </section>
 
   <section class="newsLetter nLcontacto">
     <h3 class="tituloNL">Subscríbete a nuestro News Letter</h3>
 
-    <p class="textoNL">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.</p>
+    <p class="textoNL">¡No te pierdas toda nuestras ofertas, descuentos y novedades! Además, subscribiéndote tendrás en tu primera compra un 15% DE DESCUENTO</p>
 
-    <form action="">
+    <form class="formSubs">
       <input type="email" class="email" required placeholder="Ingresa tu e-mail">
 
-      <button type="submit" class="boton subs">SUBSCRIBIRME</button>
+      <button type="submit" class="subs">SUBSCRIBIRME</button>
     </form>
   </section>
 
@@ -155,7 +158,7 @@
   
         <ul>
           <li><a href="#">Quienes somos</a></li>
-          <li><a href="../paginas/blog.html">Blog</a></li>
+          <li><a href="blog.html">Blog</a></li>
           <li><a href="#">Recursos</a></li>
           <li><a href="#">Reseñas</a></li>
         </ul>
@@ -175,7 +178,7 @@
         <h6>Contacto</h6>
   
         <ul>
-          <li><a href="../paginas/contacto.html">Contáctanos</a></li>
+          <li><a>Contáctanos</a></li>
           <li><a href="#">Trabajemos juntos</a></li>
         </ul>
 
@@ -188,7 +191,7 @@
       </div>
     </section>
 
-    <p>2023 MUSA PAPELERÍA | URUGUAY</p>
+    <p class="piePagina">2023 MUSA PAPELERÍA | URUGUAY</p>
   </footer>
 
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
