@@ -19,17 +19,38 @@
     }
   }
 
-  section .infoFoto{
-    font-size: 14px;
-    margin: 10px 0px 30px 0px;
+  section{
+    .fotoArticulo{
+      width: 893px;
+      height: 601px;
+      object-fit: cover;
+    }
+
+    .infoFoto{
+      font-size: 14px;
+      margin: 10px 0px 30px 0px;
+    }    
   }
 
   .textoArticulo{
     font-size: 18px;
     margin-bottom: 30px;
 
-    p{
+    h2{
+      font-weight: 700;
       padding-bottom: 15px;
+    }
+
+    p{
+      padding-bottom: 30px;
+    }
+
+    div img{
+      padding-bottom: 35px;
+    }
+
+    ul li{
+      padding-bottom: 10px;
     }
   }
 }

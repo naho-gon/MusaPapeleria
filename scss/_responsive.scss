@@ -12,7 +12,6 @@
 
   .navCategorias{
     justify-content: space-between;
-    width: 100%;
     padding-right: 10px;
 
     .menu{
@@ -20,23 +19,13 @@
       height: 55px;
       width: 85%;
 
-      .logo{
-        order: -1;
-
-        img{
-          width: 180px;
-        }
+      .logo img{
+        width: 180px;
       }
 
       .iconosMenu{
         width: 24px;
         justify-content: end;    
-      }
-
-      .search{
-        justify-content: end;
-        margin-left: 25px;
-        width: 24px;
       }
 
       .user, .fav, .search{    
@@ -46,7 +35,7 @@
 
     .navbar-toggler{
       border: none;
-      color: #F11585;
+      color: $colorPrincipal;
       padding-left: 20px;  
       order: -3;
 
@@ -64,18 +53,17 @@
 
       form{
         .form-control, .formButton{
-          display: flex;
-          align-items: center;
+          @include flex-center;
           margin-bottom: 20px;
         }
 
         .form-control{
-          border: 1px solid #FFA6D3;
+          border: $borde;
           margin: 0px 0px 0px 10px;
-          color: #F11585;
+          color: $colorPrincipal;
 
-          &:focus{
-            border: 1px solid #F11585;        
+          &:focus{            
+            border: $borde;        
             box-shadow: none;
           }
         }
@@ -83,11 +71,11 @@
         .btn-outline-success{
           border: none;
           margin: 0px 10px 0px 0px;
-          color: #FFA6D3;        
+          color: $colorSecundario;        
           --bs-btn-color: white;
-          --bs-btn-hover-color: #F11585;
+          --bs-btn-hover-color: $colorPrincipal;
           --bs-btn-hover-bg: white;
-          --bs-btn-active-bg: #F11585;
+          --bs-btn-active-bg: $colorPrincipal;
         }
       }
     }
@@ -162,7 +150,6 @@
 
         h6{
           font-size: 20px;
-          font-weight: 600;
           padding-bottom: 20px;
         }
       }
@@ -190,7 +177,6 @@
   // // // // // // GRILLAS
 
   .gridProducto{
-    display: grid;
     grid-template-columns: 500px;
     grid-template-rows: repeat(7, auto);
     grid-template-areas:
@@ -204,7 +190,6 @@
   }
 
   .gridBlog{
-    display: grid;
     grid-template-columns: 500px;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
@@ -216,7 +201,6 @@
   }
 
   .gridArticulo{
-    display: grid;
     grid-template-columns: 500px;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
@@ -228,7 +212,6 @@
   }
 
   .gridContacto{
-    display: grid;
     grid-template-columns: 500px;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: 
@@ -242,7 +225,7 @@
   // // // // // // INDEX  
     
   .seccionProductos{
-    margin: 0px 0px;
+    margin: 0px;
   }
 
   .producto{
@@ -288,7 +271,7 @@
       width: 150px;
       height: 130px;
       font-size: 14px;
-      margin: 0px 0px;
+      margin: 0px;
 
       img{
         width: 70px;
@@ -402,16 +385,16 @@
   }
 
   .areaProductos{
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px;
     width: 460px;
 
     .infoProducto{      
       .iconoFav{
-        font-size: 30px;
+        font-size: 28px;
       }
 
       .precio{
-        font-size: 30px;
+        font-size: 28px;
         padding-bottom: 15px;
       }
 
@@ -421,7 +404,6 @@
         }
 
         .cajaCarrito{
-          display: flex;
           flex-direction: column;
 
           .contador{
@@ -439,7 +421,7 @@
   }
 
   .tituloProducto{
-    font-size: 30px;
+    font-size: 28px;
     padding-bottom: 15px;
   }
 
@@ -460,9 +442,9 @@
       .pantallaNo{
         display: flex;
         background-color: white;
-        color: #F11585;
+        color: $colorPrincipal;
         border: none;
-        font-family: 'Montserrat', sans-serif;
+        font-family: $fuentePrincipal;
         font-weight: 700;
         font-size: 14px;
       }
