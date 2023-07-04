@@ -774,6 +774,9 @@ section .mostrando {
   padding-bottom: 30px;
 }
 .articuloBlog .textoArticulo div img {
+  width: 893px;
+  height: 601px;
+  object-fit: cover;
   padding-bottom: 35px;
 }
 .articuloBlog .textoArticulo ul li {
