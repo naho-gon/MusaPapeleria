@@ -62,7 +62,7 @@
           </form>
     
           <li class="nav-item"><a class="nav-link" href="categoriaNuevo.html">NUEVO</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">AGENDAS</a></li>
+          <li class="nav-item"><a class="nav-link" href="categoriaAgendas.html">AGENDAS</a></li>
           <li class="nav-item"><a class="nav-link" href="#">ESCRIBIR</a></li>
           <li class="nav-item"><a class="nav-link" href="#">PLANNERS</a></li>
           <li class="nav-item"><a class="nav-link" href="#">CUADERNOS</a></li>
@@ -89,9 +89,58 @@
 
       <div class="cajaFyO">
         <div>
-          <button class="filtro">
-            <p><i class="fa-solid fa-sliders"></i> Filtrar</p>
-          </button>
+          <button class="btn filtro" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"><i class="fa-solid fa-sliders"></i> Filtrar</button>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+              <h4 class="offcanvas-title" id="offcanvasLabel">Filtros</h4>
+
+              <button type="button" class="botonCerrar" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <div>
+                <h4>Categorias</h4>
+
+                <div>
+                  <ul>
+                    <li><a href="#">Categoría 1</a></li>
+                    <li><a href="#">Categoría 2</a></li>
+                    <li><a href="#">Categoría 3</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div>
+                <h4>Color</h4>
+
+                <div>                  
+                  <div class="circulo" id="c1"></div>
+                  <div class="circulo" id="c2"></div>
+                  <div class="circulo" id="c3"></div>
+                  <div class="circulo" id="c4"></div>
+                  <div class="circulo" id="c5"></div>
+                </div>
+              </div>
+
+              <div>
+                <h4>Precio</h4>
+
+                <div>
+                  <form class="precioOffCanvas">
+                    <input type="number" required placeholder="Mínimo" min="0">
+                    <p>-</p>
+                    <input type="number" required placeholder="Máximo" min="1">
+                    <button type="submit" class="okBoton">Ok</button>
+                  </form>                  
+                </div>
+              </div>
+            </div>
+
+            <div class="botonOffCanvas">
+              <button class="productosOffCanvas">VER PRODUCTOS</button>
+            </div>
+          </div>
         </div>
   
         <div>
@@ -110,63 +159,99 @@
 
     <article class="contenedorProductos">
       <article class="producto aire">
-        <img src="../imagenes/productos/packLapicesR.jpg" alt="Pack Lápices, goma y sacapuntas">
-        <a href="productos/producto1.html"><p>Pack Lápices, goma y sacapuntas</p></a>
+        <a href="productos/producto1.html">
+          <img src="../imagenes/productos/packLapicesR.jpg" alt="Pack Lápices, goma y sacapuntas">
+          <p>Pack Lápices, goma y sacapuntas</p>
+          <p>$ 120</p>
+        </a>        
       </article>
   
       <article class="producto aire">
-        <img src="../imagenes/productos/packCartuCompleta.jpg" alt="Pack comienzo a clases "La cartu más completa"">
-        <a href="productos/producto5.html"><p>Pack comienzo a clases "La cartu más completa"</p></a>
+        <a href="productos/producto5.html">
+          <img src="../imagenes/productos/packCartuCompleta.jpg" alt="Pack comienzo a clases "La cartu más completa"">
+          <p>Pack comienzo a clases "La cartu más completa"</p>
+          <p>$ 830</p>
+        </a>        
       </article>
   
       <article class="producto aire">
-        <img src="../imagenes/productos/packEmpezando.jpg" alt="Pack comienzo a clases "Empezando"">
-        <a href="productos/producto7.html"><p>Pack comienzo a clases "Empezando"</p></a>
+        <a href="productos/producto7.html">
+          <img src="../imagenes/productos/packEmpezando.jpg" alt="Pack comienzo a clases "Empezando"">
+          <p>Pack comienzo a clases "Empezando"</p>
+          <p>$ 950</p>
+        </a>
       </article>
       
       <article class="producto aire">
-        <img src="../imagenes/productos/unicornioGlitter.jpg" alt="Lapicera de unicornio con glitter">
-        <a href="productos/producto2.html"><p>Lapicera de unicornio con glitter</p></a>
+        <a href="productos/producto2.html">
+          <img src="../imagenes/productos/unicornioGlitter.jpg" alt="Lapicera de unicornio con glitter">
+          <p>Lapicera de unicornio con glitter</p>
+          <p>$ 60</p>
+        </a>
       </article>
       
       <article class="producto aire">
-        <img src="../imagenes/productos/cartucheraMargaritas.jpg" alt="Cartuchera margaritas">
-        <a href="productos/producto4.html"><p>Cartuchera margaritas</p></a>
+        <a href="productos/producto4.html">
+          <img src="../imagenes/productos/cartucheraMargaritas.jpg" alt="Cartuchera margaritas">
+          <p>Cartuchera margaritas</p>
+          <p>$ 110</p>
+        </a>
       </article>
   
       <article class="producto aire">
-        <img src="../imagenes/productos/plannerDeEscritorio.png" alt="Planner de escritorio">
-        <a href="productos/producto3.html"><p>Planner de escritorio</p></a>
+        <a href="productos/producto3.html">
+          <img src="../imagenes/productos/plannerDeEscritorio.png" alt="Planner de escritorio">
+          <p>Planner de escritorio</p>
+          <p>$ 450</p>
+        </a>        
       </article>
   
       <article class="producto aire">
-        <img src="../imagenes/productos/plannerEnrulado.jpg" alt="Planner diario enrulado">
-        <a href="productos/producto9.html"><p>Planner diario enrulado</p></a>
+        <a href="productos/producto9.html">
+          <img src="../imagenes/productos/plannerEnrulado.jpg" alt="Planner diario enrulado">
+          <p>Planner diario enrulado</p>
+          <p>$ 280</p>
+        </a>        
       </article>
       
       <article class="producto aire">
-        <img src="../imagenes/productos/agendaPoderosa.jpg" alt="Agenda "podeROSA" 2023">
-        <a href="productos/producto6.html"><p>Agenda "podeROSA" 2023</p></a>
+        <a href="productos/producto6.html">
+          <img src="../imagenes/productos/agendaPoderosa.jpg" alt="Agenda "podeROSA" 2023">
+          <p>Agenda "podeROSA" 2023</p>
+          <p>$ 1240</p>
+        </a>        
       </article>
 
       <article class="producto aire">
-        <img src="../imagenes/productos/agendaCaos.jpg" alt="Agenda "CAOS ORGANIZADO" 2023">
-        <a href="productos/producto8.html"><p>Agenda "CAOS ORGANIZADO" 2023</p></a>
+        <a href="productos/producto8.html">
+          <img src="../imagenes/productos/agendaCaos.jpg" alt="Agenda "CAOS ORGANIZADO" 2023">
+          <p>Agenda "CAOS ORGANIZADO" 2023</p>
+          <p>$ 1240</p>
+        </a>        
       </article>
       
       <article class="producto aire">
-        <img src="../imagenes/productos/agendaMagia.jpg" alt="Agenda "MAGIA" 2023">
-        <a href="productos/producto10.html"><p>Agenda "MAGIA" 2023</p></a>
+        <a href="productos/producto10.html">
+          <img src="../imagenes/productos/agendaMagia.jpg" alt="Agenda "MAGIA" 2023">
+          <p>Agenda "MAGIA" 2023</p>
+          <p>$ 1240</p>
+        </a>        
       </article>
   
       <article class="producto aire">
-        <img src="../imagenes/productos/agendaPlantas.jpg" alt="Agenda "Donde sea florezco" 2023">
-        <a href="productos/producto11.html"><p>Agenda "Donde sea florezco" 2023</p></a>
+        <a href="productos/producto11.html">
+          <img src="../imagenes/productos/agendaPlantas.jpg" alt="Agenda "Donde sea florezco" 2023">
+          <p>Agenda "Donde sea florezco" 2023</p>
+          <p>$ 1240</p>
+        </a>        
       </article>
       
       <article class="producto aire">
-        <img src="../imagenes/productos/agendaUnisex.jpg" alt="Agenda unisex 2023">
-        <a href="productos/producto12.html"><p>Agenda unisex 2023</p></a>
+        <a href="productos/producto12.html">
+          <img src="../imagenes/productos/agendaUnisex.jpg" alt="Agenda unisex 2023">
+          <p>Agenda unisex 2023</p>
+          <p>$ 1240</p>
+        </a>        
       </article>
     </article>
 

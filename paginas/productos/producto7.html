@@ -62,7 +62,7 @@
             </form>
     
             <li class="nav-item"><a class="nav-link" href="../categoriaNuevo.html">NUEVO</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">AGENDAS</a></li>
+            <li class="nav-item"><a class="nav-link" href="../categoriaAgendas.html">AGENDAS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">ESCRIBIR</a></li>
             <li class="nav-item"><a class="nav-link" href="#">PLANNERS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">CUADERNOS</a></li>
@@ -83,12 +83,20 @@
   </div>
 
   <section class="fotosProductos">
-    <article class="fotoGrande">
-      <img src="../../imagenes/productos/packEmpezando.jpg" alt="Imagen principal del producto tamaño grande">
+    <article class="fotoGrande" data-bs-toggle="modal" data-bs-target="#modal1">
+      <a href="#"><img src="../../imagenes/productos/packEmpezando.jpg" alt="Imagen principal del producto tamaño grande"></a>
     </article>
 
     <div class="fotosSecundarias">
-      <img src="../../imagenes/productos/packEmpezando.jpg" class="fotosChicas" alt="Imagen principal del producto tamaño chico">
+      <a href="#"  data-bs-toggle="modal" data-bs-target="#modal1"><img src="../../imagenes/productos/packEmpezando.jpg" class="fotosChicas" alt="Imagen principal del producto tamaño chico"></a>
+    </div>
+
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../../imagenes/productos/packEmpezando.jpg" alt="Imagen principal del producto tamaño grande">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -100,26 +108,40 @@
         <i class="fa-solid fa-heart"></i>
       </div>
 
-      <h2 class="precio">$ 120</h2>
+      <h2 class="precio">$ 950</h2>
 
-      <p class="descripcionInfo">Pack de 2 lápices, una goma y un sacapuntas. Grafo HB N° 2.</p>
+      <p class="descripcionInfo">Incluye: 2 cuadernos tapa blanda, pack resaltadores Galaxy, 2 lapiceras, pack notitas, planner engomado, post it.</p>
 
       <div>
         <div>
           <h4 class="elegir">Color</h4>
           <div class="circulo" id="c1"></div>
           <div class="circulo" id="c2"></div>
-          <div class="circulo" id="c3"></div>
           <div class="circulo" id="c4"></div>
           <div class="circulo" id="c5"></div>
         </div>
 
         <div>
-          <label for="formato" class="elegir">Formato</label>
+          <label for="formato" class="elegir">Diseño cuaderno 1</label>
           <select class="formato" name="formato" id="formato">
-            <option value="formato1"> Formato 1</option>
-            <option value="formato2"> Formato 2</option>
-            <option value="formato3"> Formato 3</option>
+            <option value="formato1"> Caritas</option>
+            <option value="formato2"> Margaritas</option>
+            <option value="formato3"> Blah Blah Blah</option>
+            <option value="formato1"> Enciende tu alma</option>
+            <option value="formato2"> Irradia positividad</option>
+            <option value="formato3"> Fuerte como el infierno</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="formato" class="elegir">Diseño cuaderno 2</label>
+          <select class="formato" name="formato" id="formato">
+            <option value="formato1"> Caritas</option>
+            <option value="formato2"> Margaritas</option>
+            <option value="formato3"> Blah Blah Blah</option>
+            <option value="formato1"> Enciende tu alma</option>
+            <option value="formato2"> Irradia positividad</option>
+            <option value="formato3"> Fuerte como el infierno</option>
           </select>
         </div>
 
@@ -133,72 +155,41 @@
       </div>
     </article>
   </section>
-  
-  <section class="sobreProducto">
-    <article>
-      <h3 class="tituloProducto">Sobre el producto</h3>
-
-      <p class="descripcion tamanioDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-     </p>
-
-      <p class="descripcion tamanioDescripcion vaLeerMas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      
-      <button class="pantallaNo ">Leer más</button>
-    </article>
-  </section>
-
-  <section class="especificaciones">
-    <article>
-      <h3 class="tituloProducto">Especificaciones</h3>
-
-      <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
-      </div>
-
-      <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
-      </div>
-
-      <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
-      </div>
-
-      <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
-      </div>
-    </article>
-  </section>
 
   <section class="aireProducto seccionProductos">
     <h2 class="titulo">TAMBIÉN PODRÍA GUSTARTE</h2>
 
     <article class="artProductos gustarte">
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/packLapicesR.jpg" alt="Producto 1">
-  
-        <a href="producto1.html"><p>Pack Lápices, goma y sacapuntas</p></a>
+        <a href="producto1.html">
+          <img src="../../imagenes/productos/packLapicesR.jpg" alt="Producto 1">  
+          <p>Pack Lápices, goma y sacapuntas</p>
+          <p>$ 120</p>
+        </a>        
       </article>
   
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/unicornioGlitter.jpg" alt="Producto 2">
-  
-        <a href="producto2.html"><p>Lapicera de unicornio con glitter</p></a>
+        <a href="producto2.html">
+          <img src="../../imagenes/productos/unicornioGlitter.jpg" alt="Producto 2">  
+          <p>Lapicera de unicornio con glitter</p>
+          <p>$ 60</p>
+        </a>        
       </article>
   
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/plannerDeEscritorio.png" alt="Producto 3">
-  
-        <a href="producto3.html"><p>Planner de escritorio</p></a>
+        <a href="producto3.html">
+          <img src="../../imagenes/productos/plannerDeEscritorio.png" alt="Producto 3">  
+          <p>Planner de escritorio</p>
+          <p>$ 450</p>
+        </a>        
       </article>
   
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/cartucheraMargaritas.jpg" alt="Producto 4">
-  
-        <a href="producto4.html"><p>Cartuchera margaritas</p></a>
+        <a href="producto4.html">
+          <img src="../../imagenes/productos/cartucheraMargaritas.jpg" alt="Producto 4">
+          <p>Cartuchera margaritas</p>
+          <p>$ 110</p>
+        </a>        
       </article>
     </article>
   </section>

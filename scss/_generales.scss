@@ -100,7 +100,7 @@ header{
   .navbar-nav{
     justify-content: space-between;
     width: 100%;
-    padding: 0px 30px;
+    padding: 0px 40px 0px 0px;
 
     form{
       .form-control, .formButton{
@@ -113,7 +113,7 @@ header{
       color: $colorPrincipal;
 
       &:hover{
-        color: $colorPrincipal;
+        padding: 0px 10px;
       }
     }
   }
@@ -127,6 +127,7 @@ header{
   height: 10px;
   width: 10px;
   border-radius: 50%;
+  background-color: $colorPrincipal;
 }
 
 .carousel-item img{

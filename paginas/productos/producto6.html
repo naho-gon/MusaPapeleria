@@ -62,7 +62,7 @@
             </form>
     
             <li class="nav-item"><a class="nav-link" href="../categoriaNuevo.html">NUEVO</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">AGENDAS</a></li>
+            <li class="nav-item"><a class="nav-link" href="../categoriaAgendas.html">AGENDAS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">ESCRIBIR</a></li>
             <li class="nav-item"><a class="nav-link" href="#">PLANNERS</a></li>
             <li class="nav-item"><a class="nav-link" href="#">CUADERNOS</a></li>
@@ -83,15 +83,47 @@
   </div>
 
   <section class="fotosProductos">
-    <article class="fotoGrande">
-      <img src="../../imagenes/productos/agendaPoderosa.jpg" alt="Imagen principal del producto tamaño grande">
+    <article class="fotoGrande" data-bs-toggle="modal" data-bs-target="#modal1">
+      <a href="#"><img src="../../imagenes/productos/agendaPoderosa.jpg" alt="Imagen principal del producto tamaño grande"></a>
     </article>
 
     <div class="fotosSecundarias">
-      <img src="../../imagenes/productos/agendaPoderosa.jpg" class="fotosChicas" alt="Imagen principal del producto tamaño chico">
-      <img src="../../imagenes/productos/agendaPoderosaSobre.jpg" class="fotosChicas" alt="Imagen secundaria del producto">
-      <img src="../../imagenes/productos/agendaPoderosaEnero.jpg" class="fotosChicas" alt="Imagen secundaria del producto">
-      <img src="../../imagenes/productos/agendaPoderosaInterior.jpg" class="fotosChicas" alt="Imagen secundaria del producto">
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal1"><img src="../../imagenes/productos/agendaPoderosa.jpg" class="fotosChicas" alt="Imagen principal del producto tamaño chico"></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal2"><img src="../../imagenes/productos/agendaPoderosaSobre.jpg" class="fotosChicas" alt="Imagen secundaria del producto"></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal3"><img src="../../imagenes/productos/agendaPoderosaEnero.jpg" class="fotosChicas" alt="Imagen secundaria del producto"></a>
+      <a href="#" data-bs-toggle="modal" data-bs-target="#modal4"><img src="../../imagenes/productos/agendaPoderosaInterior.jpg" class="fotosChicas" alt="Imagen secundaria del producto"></a>
+    </div>
+
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../../imagenes/productos/agendaPoderosa.jpg" alt="Imagen principal del producto tamaño grande">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../../imagenes/productos/agendaPoderosaSobre.jpg" alt="Imagen principal del producto tamaño grande">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../../imagenes/productos/agendaPoderosaEnero.jpg" alt="Imagen principal del producto tamaño grande">
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <img src="../../imagenes/productos/agendaPoderosaInterior.jpg" alt="Imagen principal del producto tamaño grande">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -103,26 +135,16 @@
         <i class="fa-solid fa-heart"></i>
       </div>
 
-      <h2 class="precio">$ 120</h2>
+      <h2 class="precio">$ 1240</h2>
 
-      <p class="descripcionInfo">Pack de 2 lápices, una goma y un sacapuntas. Grafo HB N° 2.</p>
+      <p class="descripcionInfo">Agenda con opción semanal o 2 días. Contiene un montón de secciones, lee más sobre su contenido en "Sobre el producto"</p>
 
       <div>
         <div>
-          <h4 class="elegir">Color</h4>
-          <div class="circulo" id="c1"></div>
-          <div class="circulo" id="c2"></div>
-          <div class="circulo" id="c3"></div>
-          <div class="circulo" id="c4"></div>
-          <div class="circulo" id="c5"></div>
-        </div>
-
-        <div>
-          <label for="formato" class="elegir">Formato</label>
+          <label for="formato" class="elegir">Interior</label>
           <select class="formato" name="formato" id="formato">
-            <option value="formato1"> Formato 1</option>
-            <option value="formato2"> Formato 2</option>
-            <option value="formato3"> Formato 3</option>
+            <option value="formato1"> Formato semanal</option>
+            <option value="formato2"> Formato 2 días</option>
           </select>
         </div>
 
@@ -141,12 +163,62 @@
     <article>
       <h3 class="tituloProducto">Sobre el producto</h3>
 
-      <p class="descripcion tamanioDescripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <p class="descripcion tamanioDescripcion">No solo para planificar tu año, sino para conocerte y mejorar!
      </p>
 
-      <p class="descripcion tamanioDescripcion vaLeerMas">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="descripcion tamanioDescripcion">Esta agenda será tu compañera y te recordará que la prioridad siempre debes ser tú y tus metas. Contiene mucho contenido de auto conocimiento y desarrollo personal</p>
+
+      <p class="descripcion tamanioDescripcion vaLeerMas"><b>CONTIENE:</b></p>
+
+      <ul class="descripcion tamanioDescripcion vaLeerMas">
+        <li>• Cinta bebé para marcar en qué día estás</li>
+        <li>• Elástico para cerrar</li>
+        <li>• Sobre doble de cartulina</li>
+        <li>• 2 planchas de stickers increíbles</li>
+        <li>• Separadores ilustrados con frases</li>
+        <li>• Muchas hojas de notas</li>
+      </ul>
+
+      <p class="descripcion tamanioDescripcion vaLeerMas"><b>INTERIOR:</b></p>
+
+      <ul class="descripcion tamanioDescripcion vaLeerMas">
+        <li>Datos personales</li>
+        <li>Calendario anual</li>
+        <li>Mis eventos</li>
+        <li>Mis deseos 2023</li>
+        <li>Control de humor o emociones (año en píxeles)</li>
+        <li>Calendario menstrual</li>
+        <li>Por descubrir (libros, series, etc)</li>
+        <li>Vision board 2023</li>
+        <li>Resumen del año 2023 (al final)</li>
+        <li>Reflexiones del año 2023 (al final)</li>
+      </ul>
+
+      <p class="descripcion tamanioDescripcion vaLeerMas"><i>CADA MES:</i></p>
+
+      <ul class="descripcion tamanioDescripcion vaLeerMas">
+        <li>Calendario mensual</li>
+        <li>Actividad del mes</li>
+        <li>Horario</li>
+        <li>Mis metas</li>
+        <li>Gastos mensuales</li>
+        <li>Notas</li>
+        <li>Resumen del mes</li>
+      </ul>
+
+      <p class="descripcion tamanioDescripcion vaLeerMas"><i>CADA SEMANA:</i></p>
+
+      <ul class="descripcion tamanioDescripcion vaLeerMas">
+        <li>Objetivos</li>
+        <li>Importantes</li>
+        <li>¿Cómo vamos?</li>
+        <li>Control de hábitos</li>
+        <li>Pendientes de la semana</li>
+      </ul>
+
+      <p class="descripcion tamanioDescripcion vaLeerMas"><b>¿Será que es la agenda más completa de todas? RE SIIIIIIIII♥</b></p>
       
-      <button class="pantallaNo ">Leer más</button>
+      <button class="pantallaNo">Leer más</button>
     </article>
   </section>
 
@@ -155,23 +227,33 @@
       <h3 class="tituloProducto">Especificaciones</h3>
 
       <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
+        <p class="icono"><i class="fa-solid fa-minus"></i></p>
+        <p class="descripcion">Tamaño: A5 15 x 21 cm </p>
       </div>
 
       <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
+        <p class="icono"><i class="fa-solid fa-minus"></i></p>
+        <p class="descripcion">Tapas: dura terminado mate con foil metalizado</p>
       </div>
 
       <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
+        <p class="icono"><i class="fa-solid fa-minus"></i></p>
+        <p class="descripcion">Interior: semana a la vista a todo color o 2 días por página a todo color</p>
       </div>
 
       <div class="especificacionItem">
-        <img src="../../imagenes/icono.png" alt="" class="icono">
-        <p class="descripcion">Lorem ipsum dolor sit amet, consectetur </p>
+        <p class="icono"><i class="fa-solid fa-minus"></i></p>
+        <p class="descripcion">Encuadernación: rulo doble metálico color blanco</p>
+      </div>
+
+      <div class="especificacionItem">
+        <p class="icono"><i class="fa-solid fa-minus"></i></p>
+        <p class="descripcion">Papel: 80 gr</p>
+      </div>
+
+      <div class="especificacionItem">
+        <p class="icono"><i class="fa-solid fa-minus"></i></p>
+        <p class="descripcion">Cantidad de hojas: 142 hojas la semanal y 192 la 2 días por página</p>
       </div>
     </article>
   </section>
@@ -181,27 +263,35 @@
 
     <article class="artProductos gustarte">
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/packLapicesR.jpg" alt="Producto 1">
-  
-        <a href="producto1.html"><p>Pack Lápices, goma y sacapuntas</p></a>
+        <a href="producto1.html">
+          <img src="../../imagenes/productos/packLapicesR.jpg" alt="Producto 1">
+          <p>Pack Lápices, goma y sacapuntas</p>
+          <p>$ 120</p>
+        </a>        
       </article>
   
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/unicornioGlitter.jpg" alt="Producto 2">
-  
-        <a href="producto2.html"><p>Lapicera de unicornio con glitter</p></a>
+        <a href="producto2.html">
+          <img src="../../imagenes/productos/unicornioGlitter.jpg" alt="Producto 2">
+          <p>Lapicera de unicornio con glitter</p>
+          <p>$ 60</p>
+        </a>        
       </article>
   
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/plannerDeEscritorio.png" alt="Producto 3">
-  
-        <a href="producto3.html"><p>Planner de escritorio</p></a>
+        <a href="producto3.html">
+          <img src="../../imagenes/productos/plannerDeEscritorio.png" alt="Producto 3">
+          <p>Planner de escritorio</p>
+          <p>$ 450</p>
+        </a>
       </article>
   
       <article class="producto gustarteCel">
-        <img src="../../imagenes/productos/cartucheraMargaritas.jpg" alt="Producto 4">
-  
-        <a href="producto4.html"><p>Cartuchera margaritas</p></a>
+        <a href="producto4.html">
+          <img src="../../imagenes/productos/cartucheraMargaritas.jpg" alt="Producto 4">
+          <p>Cartuchera margaritas</p>
+          <p>$ 110</p>
+        </a>
       </article>
     </article>
   </section>

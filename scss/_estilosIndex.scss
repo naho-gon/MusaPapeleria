@@ -6,23 +6,30 @@
   margin: 0px 40px 30px 40px;
 }
 
-.producto{
+.producto a{
   display: flex;
   @include column-center;
   width: 306px;
-  text-align: center;    
+  text-align: center;
   font-size: 16px;
   overflow: hidden;
 
   img{
-    padding-bottom: 8px;
-    width: 100%;
-    height: 380px;
+    width: 306px;
+    height: 372px;
     object-fit: cover;
+    overflow: hidden;
+  
+    &:hover{
+      transform: scale(1.2);
+      padding-bottom: 31px;
+    }
   }
 
-  a{
-    width: 85%;
+  p{
+    padding-top: 8px;
+    width: 95%;
+    font-weight: 700;
   }
 }
 
@@ -70,7 +77,11 @@
     margin: $margenPagina;
 
     img{
-      padding-bottom: 21px;
+      margin-bottom: 21px;
+      width: 95px;
+      height: 95px;
+      object-fit: cover;
+      border-radius: 50px;
     }
 
     h4{  

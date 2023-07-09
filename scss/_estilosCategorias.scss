@@ -15,12 +15,84 @@ section{
         height: 30px;
       }
 
+      div .offcanvas{
+        border: $borde;
+
+        .offcanvas-header{
+          .offcanvas-title{
+            color: $colorPrincipal;
+            font-weight: 700;
+            font-size: 24px;
+          }
+
+          .botonCerrar{
+            background-color: white;
+            color: $colorPrincipal;
+            border: none;
+            font-size: 18px;
+          }
+        }
+
+        .offcanvas-body{
+          padding: 0px 16px 16px 16px;
+
+          div h4{
+            color: $colorPrincipal;
+            font-size: 18px;
+            font-weight: 700;
+            padding-bottom: 8px;
+          }
+
+          div div{
+            padding-bottom: 30px;
+          }
+
+          .precioOffCanvas{            
+            display: flex;
+            gap: 10px;
+            width: 210px;
+            flex-wrap: wrap;
+
+            input{
+              width: 90px;
+              font-size: 14px;
+              border: $borde;
+              padding: 5px;
+              outline: none;
+            }
+
+            p{
+              color: $colorPrincipal;
+            }
+
+            .okBoton{
+              @include boton;
+              width: 50px;
+              height: 30px;
+            }
+          }
+        }
+
+        .botonOffCanvas{
+          display: flex;
+          padding: 16px 16px;
+          justify-content: center;
+
+          .productosOffCanvas{
+            @include boton;
+            height: 50px;
+            width: 100%;
+          }
+        }
+      }
+
       div .ordenar{
         font-family: $fuentePrincipal;
         font-size: 14px;
         font-weight: 600;
         color:$colorPrincipal;
         border: solid 2px $colorPrincipal;
+        border-radius: 7px;
         outline: none;
         width: 240px;
         height: 30px;
@@ -38,22 +110,6 @@ section{
     @include flex-between;
     flex-wrap: wrap;
     margin: 0px 40px;
-
-    .producto{
-      display: flex;
-      @include column-center;
-      width: 306px;
-      text-align: center;    
-      font-size: 16px;
-
-      img{
-        padding-bottom: 8px;
-      }
-
-      a{
-        width: 85%;
-      }
-    }
   }
 
   .aire{

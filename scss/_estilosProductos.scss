@@ -56,14 +56,6 @@
     }
 
     div{
-      div .circulo{
-        height: 40px;
-        width: 40px;
-        border-radius: 50px;
-        display: inline-block;
-        margin-right: 10px;
-      }
-
       div .formato{
         font-family: $fuentePrincipal;
         font-size: 14px;
@@ -101,6 +93,14 @@
   }
 }
 
+.circulo{
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .tituloProducto{
   font-weight: 700;
   font-size: 32px;
@@ -117,7 +117,7 @@
 }
 
 #c1{
-  background-color: rgb(244, 124, 186);
+  background-color: rgb(248, 166, 255);
 }
 
 #c2{
@@ -125,7 +125,7 @@
 }
 
 #c3{
-  background-color: rgb(166, 249, 166);
+  background-color: rgb(153, 248, 220);
 }
 
 #c4{
@@ -133,7 +133,11 @@
 }
 
 #c5{
-  background-color: rgb(240, 108, 108);
+  background-color: rgb(250, 121, 160);
+}
+
+#c6{
+  background-color: rgb(0, 0, 0);
 }
 
 .sobreProducto{
@@ -171,8 +175,7 @@
     width: 420px;
 
     .icono{
-      width: 24px;
-      height: 24px;
+      margin-top: 2px;
       margin-right: 15px;
     }
   }
@@ -180,5 +183,6 @@
 
 .aireProducto{
   grid-area: gustarte;
+  margin-top: 25px;
   margin-bottom: 35px;
 }
