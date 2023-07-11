@@ -104,25 +104,25 @@
     
     <form action="">
       <div>
-        <h4 class="tituloEnviarMensaje">Nombre completo *</h4>
-        <input type="text" class="nYaInput" required placeholder="Nombre y apellido">
+        <label for="nombreYapellido" class="tituloEnviarMensaje">Nombre completo *</label>
+        <input type="text" class="nYaInput" id="nombreYapellido" required placeholder="Nombre y apellido">
       </div>
 
       <div class="emailTel">
         <div>
-          <h4 class="tituloEnviarMensaje">E-mail *</h4>
-          <input type="email" required placeholder="E-mail" class="emailContacto" >
+          <label for="email" class="tituloEnviarMensaje">E-mail *</label>
+          <input type="email" class="emailContacto" id="email" required placeholder="E-mail">
         </div>
   
         <div>
-          <h4 class="tituloEnviarMensaje">Teléfono *</h4>
-          <input type="tel" pattern="[0-9]{9}" required placeholder="Número de teléfono" class="telContacto">
+          <label for="telefono" class="tituloEnviarMensaje">Teléfono *</label>
+          <input type="tel" class="telContacto" id="telefono" required placeholder="Número de teléfono" pattern="[0-9]{9}">
         </div>
       </div>
 
       <div>
-        <h4 class="tituloEnviarMensaje">Mensaje *</h4>
-        <textarea class="mensajeContacto" placeholder="Mensaje que nos quieres enviar" required name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <label for="mensaje" class="tituloEnviarMensaje">Mensaje *</label>
+        <textarea class="mensajeContacto" id="mensaje" name="mensaje" required placeholder="Mensaje que nos quieres enviar" cols="30" rows="10"></textarea>
       </div>    
 
       <button type="submit" class="enviarBoton">ENVIAR</button>
@@ -132,7 +132,7 @@
   <section class="newsLetter nLcontacto">
     <h3 class="tituloNL">Subscríbete a nuestro News Letter</h3>
 
-    <p class="textoNL">¡No te pierdas toda nuestras ofertas, descuentos y novedades! Además, subscribiéndote tendrás en tu primera compra un 15% DE DESCUENTO</p>
+    <p class="textoNL">¡No te pierdas toda nuestras ofertas, descuentos y novedades! Además, subscribiéndote tendrás en tu primera compra un <b>15% DE DESCUENTO</b></p>
 
     <form class="formSubs">
       <input type="email" class="email" required placeholder="Ingresa tu e-mail">

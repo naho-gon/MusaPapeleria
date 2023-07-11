@@ -520,7 +520,7 @@ section .headerCategoria .cajaFyO div .offcanvas .botonOffCanvas .productosOffCa
   color: white;
   font-size: 18px;
   height: 50px;
-  width: 100%;
+  width: 366px;
 }
 section .headerCategoria .cajaFyO div .ordenar {
   font-family: "Montserrat", sans-serif;
@@ -761,6 +761,16 @@ section .mostrando {
   padding-bottom: 12px;
   width: 325px;
 }
+.tarjetaArticulop .fecha {
+  height: 50px;
+  width: 50px;
+}
+.tarjetaArticulop .fecha .fecha1 {
+  font-size: 22px;
+}
+.tarjetaArticulop .fecha .fecha2 {
+  font-size: 16px;
+}
 
 .categorias {
   grid-area: categorias;
@@ -776,8 +786,11 @@ section .mostrando {
 .categorias a {
   display: block;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   padding-bottom: 15px;
+}
+.categorias a:hover {
+  padding: 10px;
 }
 
 .paginacion {
@@ -831,7 +844,7 @@ section .mostrando {
   object-fit: cover;
 }
 .articuloBlog section .infoFoto {
-  font-size: 14px;
+  font-size: 12px;
   margin: 10px 0px 30px 0px;
 }
 .articuloBlog .textoArticulo {
@@ -846,6 +859,9 @@ section .mostrando {
 .articuloBlog .textoArticulo p, .articuloBlog .textoArticulo ul {
   padding-bottom: 30px;
 }
+.articuloBlog .textoArticulo p a, .articuloBlog .textoArticulo ul a {
+  text-decoration-line: underline;
+}
 .articuloBlog .textoArticulo div img {
   width: 893px;
   height: 601px;
@@ -853,7 +869,7 @@ section .mostrando {
   padding-bottom: 35px;
 }
 .articuloBlog .textoArticulo ul li {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
 }
 
 .articulosRyD {
@@ -999,6 +1015,7 @@ section .mostrando {
 .enviarContacto form .emailTel {
   display: flex;
   justify-content: space-between;
+  gap: 10px;
 }
 .enviarContacto form .emailTel div .emailContacto, .enviarContacto form .emailTel div .telContacto {
   width: 246px;

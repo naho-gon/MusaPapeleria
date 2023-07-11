@@ -40,6 +40,7 @@
 
     .emailTel{
       @include flex-between;
+      gap: 10px;
 
       div .emailContacto, div .telContacto{
         width: 246px;
