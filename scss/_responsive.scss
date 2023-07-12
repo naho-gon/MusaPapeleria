@@ -58,20 +58,20 @@
         }
 
         .form-control{
-          border: $borde;
+          border: 1px solid $colorSecundario;
           margin: 0px 0px 0px 10px;
           color: $colorPrincipal;
 
-          &:focus{            
-            border: $borde;        
+          &:focus{
+            border: $borde;
             box-shadow: none;
           }
         }
 
-        .btn-outline-success{
+        .formButton{
           border: none;
           margin: 0px 10px 0px 0px;
-          color: $colorSecundario;        
+          color: $colorSecundario;
           --bs-btn-color: white;
           --bs-btn-hover-color: $colorPrincipal;
           --bs-btn-hover-bg: white;

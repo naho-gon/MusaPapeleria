@@ -8,17 +8,24 @@
   <meta name="description" content="Organiza, crea y vive bonito... con la ayuda de nuestra papelería bonita, útiles entre otros. No te pierdas visitar nuestra tienda online">
   <meta name="keywords" content="papeleria, papeleria bonita, papeleria montevideo, papeleria centro, papeleria artesanal, cuadernos, cuadernos lindos, papeleria musa, agenda, bullet journal">
 
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/aac2da9f55.js" crossorigin="anonymous"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+
+
   <link rel="shortcut icon" href="imagenes/favicon.png">
+
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Musa Papelería | La papelería más bonita</title>
 </head>
+
 <body>
 	<header class="headerIndex">
 		<div class="oferta">
@@ -27,8 +34,22 @@
 
     <nav class="navbar navbar-expand-xl container-fluid navCategorias">
       <div class="menu">
-        <div class="search">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <div class="search">          
+          <a href="#" data-bs-toggle="modal" data-bs-target="#modalBuscador"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+          <div class="modal fade" id="modalBuscador" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <form class="d-flex modalBuscador" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+
+                  <button class="btn btn-outline-success formButton" type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
     
         <div class="logo">
@@ -59,16 +80,25 @@
           <form class="d-flex" role="search">
             <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
         
-            <button class="btn btn-outline-success formButton" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button class="btn btn-outline-success formButton" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
     
           <li class="nav-item"><a class="nav-link" href="paginas/categoriaNuevo.html">NUEVO</a></li>
+
           <li class="nav-item"><a class="nav-link" href="paginas/categoriaAgendas.html">AGENDAS</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#">ESCRIBIR</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#">PLANNERS</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#">CUADERNOS</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#">NOTAS</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#">VARIOS</a></li>
+
           <li class="nav-item"><a class="nav-link" href="#">COMBOS</a></li>     
         </ul>
       </div>
@@ -85,25 +115,27 @@
 
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagenes/bannerPrincipal1.jpg" class="d-block w-100" alt="Banner">
+          <img src="imagenes/bannerPrincipal1.jpg" class="d-block w-100" alt="Banner promocionando las agendas Musa 2023">
         </div>
 
         <div class="carousel-item">
-          <img src="imagenes/bannerPrincipal2.jpg" class="d-block w-100" alt="Banner">
+          <img src="imagenes/bannerPrincipal2.jpg" class="d-block w-100" alt="Banner promocionando los descuentos del -Stationery Days-">
         </div>
 
         <div class="carousel-item">
-          <img src="imagenes/bannerPrincipal3.jpg" class="d-block w-100" alt="Banner">
+          <img src="imagenes/bannerPrincipal3.jpg" class="d-block w-100" alt="Banner promocionando los cuadernos de Musa">
         </div>
       </div>
 
       <button class="carousel-control-prev" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="prev">
         <span class="flechasBanner" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+
         <span class="visually-hidden">Previous</span>
       </button>
 
       <button class="carousel-control-next" type="button" data-bs-target="#bannerPrincipal" data-bs-slide="next">
         <span class="flechasBanner flechaD" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+
         <span class="visually-hidden">Next</span>
       </button>
     </div>
@@ -115,32 +147,40 @@
     <article class="artProductos">
       <article class="producto">
         <a href="paginas/productos/producto1.html">
-          <img src="imagenes/productos/packLapicesR.jpg" alt="Producto 1">
+          <img src="imagenes/productos/packLapicesR.jpg" alt="Foto del pack de lapices, goma y sacapunta color rosa">
+
           <p>Pack Lápices, goma y sacapuntas</p>
+          
           <p>$ 120</p>
         </a>        
       </article>
 
       <article class="producto">
         <a href="paginas/productos/producto2.html">
-          <img src="imagenes/productos/unicornioGlitter.jpg" alt="Producto 2">
+          <img src="imagenes/productos/unicornioGlitter.jpg" alt="Foto de la lapicera de unicornio con glitter">
+
           <p>Lapicera de unicornio con glitter</p>
+
           <p>$ 60</p>
         </a>        
       </article>
 
       <article class="producto">
         <a href="paginas/productos/producto3.html">
-          <img src="imagenes/productos/plannerDeEscritorio.png" alt="Producto 3">
+          <img src="imagenes/productos/plannerDeEscritorio.png" alt="Foto de los 3 modelos del planner de escritorio">
+
           <p>Planner de escritorio</p>
+
           <p>$ 450</p>
         </a>        
       </article>
       
       <article class="producto">
         <a href="paginas/productos/producto4.html">
-          <img src="imagenes/productos/cartucheraMargaritas.jpg" alt="Producto 4">
+          <img src="imagenes/productos/cartucheraMargaritas.jpg" alt="Foto de la cartuchera margaritas color rosa">
+
           <p>Cartuchera margaritas</p>
+
           <p>$ 110</p>
         </a>
       </article>
@@ -149,6 +189,7 @@
 
   <section class="frase">
     <h3 class= "tituloFrase">¡Estamos muy felices de tenerte por acá!</h3>
+
     <p class="textoFrase">Queremos que nuestra papelería te inspire a sacar tu parte más creativa, estar más presente, gestionar mejor tu tiempo y tu energía, para que así puedas enfocar tu vida en lo que te hae verdaderamente feliz :)</p>
   </section>
 
@@ -158,32 +199,40 @@
     <article class="artProductos">
       <article class="producto">
         <a href="paginas/productos/producto5.html">
-          <img src="imagenes/productos/packCartuCompleta.jpg" alt="Producto 5">
+          <img src="imagenes/productos/packCartuCompleta.jpg" alt="Foto del pack comienzo a clases -La cartu más completa- con muchos útiles">
+
           <p>Pack comienzo a clases "La cartu más completa"</p>
+
           <p>$ 830</p>
         </a>
       </article>
 
       <article class="producto">
         <a href="paginas/productos/producto6.html">
-          <img src="imagenes/productos/agendaPoderosa.jpg" alt="Producto 6">
+          <img src="imagenes/productos/agendaPoderosa.jpg" alt="Foto de la agenda Musa 2023 modelo -podeROSA-">
+
           <p>Agenda "podeROSA" 2023</p>
+
           <p>$ 1240</p>
         </a>
       </article>
 
       <article class="producto">
         <a href="paginas/productos/producto7.html">
-          <img src="imagenes/productos/packEmpezando.jpg" alt="Producto 7">
+          <img src="imagenes/productos/packEmpezando.jpg" alt="Foto del pack comienzo a clases -Empezando- con muchos útiles">
+
           <p>Pack comienzo a clases "Empezando"</p>
+
           <p>$ 950</p>
         </a>        
       </article>
       
       <article class="producto">
         <a href="paginas/productos/producto8.html">
-          <img src="imagenes/productos/agendaCaos.jpg" alt="Producto 8">
+          <img src="imagenes/productos/agendaCaos.jpg" alt="Foto de la agenda Musa 2023 modelo -mi caos organizado-">
+
           <p>Agenda "CAOS ORGANIZADO" 2023</p>
+
           <p>$ 1240</p>
         </a>
       </article>
@@ -192,81 +241,226 @@
 
   <section class="info">
     <article class="infoTarjeta">
-      <img src="imagenes/camion.gif" alt="Icono envío" data-aos="flip-left">
+      <img src="imagenes/camion.gif" alt="Icono gif envío" data-aos="flip-left">
+
       <h4>ENVÍOS A TODO URUGUAY</h4>
     </article>
 
     <article class="infoTarjeta">
-      <img src="imagenes/tarjeta.gif" alt="Icono pagos" data-aos="flip-left">
+      <img src="imagenes/tarjeta.gif" alt="Icono gif pagos" data-aos="flip-left">
+
       <h4>DIFERENTES MÉTODOS DE PAGO</h4>
     </article>
 
     <article class="infoTarjeta">
-      <img src="imagenes/regalo.gif" alt="Icono empaque" data-aos="flip-left">
+      <img src="imagenes/regalo.gif" alt="Icono gif empaque" data-aos="flip-left">
+
       <h4>EMPAQUE DE REGALO GRÁTIS</h4>
     </article>
     
     <article class="infoTarjeta">
-      <img src="imagenes/atencionAlUsuario.gif" alt="Icono atención" data-aos="flip-left">
+      <img src="imagenes/atencionAlUsuario.gif" alt="Icono gif atención" data-aos="flip-left">
+
       <h4>ATENCIÓN PERSONALIZADA</h4>
     </article>
   </section>
 
-  <section class="seccionArticulos">
+  <section id="carruselBlog" class="carousel slide carruselBlog">      
     <h2 class="titulo">NUESTRO BLOG</h2>
 
-    <article class="articulosSecc">
-      <article class="tarjetaArticulo">
-        <div class="fecha">
-          <p class="fecha1">01</p>
-          <p class="fecha2">Jun</p>
+    <div class="carousel-inner">
+      <div class="carousel-item active seccionArticulos">
+        <div class="cards-wrapper articulosSecc">
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">01</p>
+
+              <p class="fecha2">Jun</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo1.html">
+              <img src="imagenes/articulos/agotamientoMental.jpg" alt="Persona viendo un cuaderno de Musa con la frase -todo empieza con una página en blanco-">
+            </a>
+      
+            <h5>10 TIPS para lidiar con el agotamiento mental</h5>
+      
+            <p class="textoTarjeta">¿Sientes que el trabajo/estudios te están agotando demasiado? No te pierdas estos tips</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo1.html">Leer más</a>
+          </article>
+      
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">22</p>
+
+              <p class="fecha2">May</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo2.html">
+              <img src="imagenes/articulos/alcanzarSueños.jpg" alt="Persona escribiendo con una lapicera en un planner diario engomado color lila">
+            </a>
+      
+            <h5>La guia DEFINITIVA para alcanzar tus sueñosss!</h5>
+      
+            <p class="textoTarjeta">El otro día encontramos una frase que nos encantó: "Un objetivo es un sueño con una fecha límite"</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo2.html">Leer más</a>
+          </article>
+      
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">07</p>
+
+              <p class="fecha2">May</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo3.html">
+              <img src="imagenes/articulos/citaConmigo.jpg" alt="Frase -Un poema para el amor- escrita en un cuaderno">
+            </a>
+      
+            <h5>¿Y si tienes una cita contigo misma? Piénsalo</h5>
+      
+            <p class="textoTarjeta">Cuando estás en pareja, siempre estás planeando citas con esa persona. ¿Por qué no hacerlas sola?</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo3.html">Leer más</a>
+          </article>
         </div>
-  
-        <a href="paginas/articulos/articulo1.html"><img src="imagenes/articulos/agotamientoMental.jpg" alt="Foto artículo 1"></a>
-  
-        <h5>10 TIPS para lidiar con el agotamiento mental</h5>
-  
-        <p class="textoTarjeta">¿Sientes que el trabajo/estudios te están agotando demasiado? No te pierdas estos tips</p>
-  
-        <a class="leerMas" href="paginas/articulos/articulo1.html">Leer más</a>
-      </article>
-  
-      <article class="tarjetaArticulo">
-        <div class="fecha">
-          <p class="fecha1">22</p>
-          <p class="fecha2">May</p>
+      </div>
+
+      <div class="carousel-item seccionArticulos"> 
+        <div class="cards-wrapper articulosSecc">
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">30</p>
+
+              <p class="fecha2">Abr</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo4.html">
+              <img src="imagenes/articulos/metasAgenda.jpg" alt="Sección de agenda Musa 2023 donde aparece un horario mensual y la sección de -mis metas-">
+            </a>
+      
+            <h5>¿Planificas tus metas? Aprende cómo poder alcanzarlas</h5>
+      
+            <p class="textoTarjeta">Estoy segura que tú, amas planificar en papeles y cuadernos bonitos; pero planificar las metas va mucho más allá...</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo4.html">Leer más</a>
+          </article>
+      
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">22</p>
+
+              <p class="fecha2">Abr</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo5.html">
+              <img src="imagenes/articulos/cicloNuevoHabito.jpg" alt="Persona sentada en una escalera junto con cuadernos de Musa">
+            </a>
+      
+            <h5>¡El ciclo de un nuevo hábito y las pautas claves para empezar ya!</h5>
+      
+            <p class="textoTarjeta">A quién no le ha pasado que un día se levanta y dice: “es momento de hacer un cambio” ¿pero al final no lo cumple 😣?</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo5.html">Leer más</a>
+          </article>
+      
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">17</p>
+
+              <p class="fecha2">Abr</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo6.html">
+              <img src="imagenes/articulos/habitTracker.jpg" alt="Sección de agenda Musa 2023 donde aparece un Habit Tracker y la sección de -mis deseos para el 2023-">
+            </a>
+      
+            <h5>3 errores que hacen perder un hábito y cómo empezar a usar un habit tracker</h5>
+      
+            <p class="textoTarjeta">Estamos a mitad de año y ya tienes tu lista de nuevos hábitos que querías incorporar este año. Ahora, solo falta empezar!</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo6.html">Leer más</a>
+          </article>
         </div>
-  
-        <a href="paginas/articulos/articulo2.html"><img src="imagenes/articulos/alcanzarSueños.jpg" alt="Foto artículo 2"></a>
-  
-        <h5>La guia DEFINITIVA para alcanzar tus sueñosss!</h5>
-  
-        <p class="textoTarjeta">El otro día encontramos una frase que nos encantó: "Un objetivo es un sueño con una fecha límite"</p>
-  
-        <a class="leerMas" href="paginas/articulos/articulo2.html">Leer más</a>
-      </article>
-  
-      <article class="tarjetaArticulo">
-        <div class="fecha">
-          <p class="fecha1">07</p>
-          <p class="fecha2">May</p>
+      </div>
+
+      <div class="carousel-item seccionArticulos">  
+        <div class="cards-wrapper articulosSecc">
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">10</p>
+
+              <p class="fecha2">Abr</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo7.html">
+              <img src="imagenes/articulos/antesDeLasMetas.png" alt="Persona agarrando la agenda -Mi caos organizado- de Musa">
+            </a>
+      
+            <h5>Qué tienes que hacer antes de escribir tus metas</h5>
+      
+            <p class="textoTarjeta">¿Todavía no comenzaste a usar tu agenda 2023? Ojo que aún hay varias cosas que hacer con la del 2022 ☝️</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo7.html">Leer más</a>
+          </article>
+      
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">05</p>
+
+              <p class="fecha2">Abr</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo8.html">
+              <img src="imagenes/articulos/añoEnPixeles.png" alt="Sección de la agenda Musa 2023 donde está la sección -mi año en píxeñes- pintado">
+            </a>
+      
+            <h5>Habit Tracker: Cómo llenarlo y hacer que te funcione de verdad</h5>
+      
+            <p class="textoTarjeta">Una herramienta súper útil para llevar seguimiento de tus objetivos y ayudarte a cumplirlos. Hoy te damos ideas y tips!</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo8.html">Leer más</a>
+          </article>
+      
+          <article class="tarjetaArticulo">
+            <div class="fecha">
+              <p class="fecha1">27</p>
+
+              <p class="fecha2">Mar</p>
+            </div>
+      
+            <a href="paginas/articulos/articulo9.html">
+              <img src="imagenes/articulos/escritorio.jpg" alt="Escritorio con un cuaderno de Musa, lapicera con forma de cactus, difusor de olor, plantita artificial de cactus y una computadora">
+            </a>
+      
+            <h5>Cómo organizar tu escritorio para ser más productiva</h5>
+      
+            <p class="textoTarjeta">Sabías qué... Cómo organizas tu escritorio y guardas tus útiles puede ayudar a mejorar tu productividad?</p>
+      
+            <a class="leerMas" href="paginas/articulos/articulo9.html">Leer más</a>
+          </article>
         </div>
-  
-        <a href="paginas/articulos/articulo3.html"><img src="imagenes/articulos/citaConmigo.jpg" alt="Foto artículo 3"></a>
-  
-        <h5>¿Y si tienes una cita contigo misma? Piénsalo</h5>
-  
-        <p class="textoTarjeta">Cuando estás en pareja, siempre estás planeando citas con esa persona. ¿Por qué no hacerlas sola?</p>
-  
-        <a class="leerMas" href="paginas/articulos/articulo3.html">Leer más</a>
-      </article>
-    </article>
-    
+      </div>
+    </div>    
+
     <div class="botonBlog">
       <a href="paginas/blog.html" class="blog">
         <button class="blog">VER TODOS LOS ARTÍCULOS</button>
       </a>
     </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carruselBlog" data-bs-slide="prev">
+      <span class="flechasBanner" aria-hidden="true"><i class="fa-solid fa-chevron-left"></i></span>
+
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carruselBlog" data-bs-slide="next">
+      <span class="flechasBanner flechaD" aria-hidden="true"><i class="fa-solid fa-chevron-right"></i></span>
+
+      <span class="visually-hidden">Next</span>
+    </button>
   </section>
 
   <section class="newsLetter">
@@ -288,7 +482,9 @@
   
         <ul>
           <li><a href="#">Preguntas frecuentes</a></li>
+
           <li><a href="#">Términos y condiciones</a></li>
+
           <li><a href="#">Privacidad</a></li>
         </ul>
       </div>
@@ -298,8 +494,11 @@
   
         <ul>
           <li><a href="#">Quienes somos</a></li>
+
           <li><a href="paginas/blog.html">Blog</a></li>
+
           <li><a href="#">Recursos</a></li>
+
           <li><a href="#">Reseñas</a></li>
         </ul>
       </div>
@@ -309,7 +508,9 @@
   
         <ul>
           <li><a href="#">Mis datos</a></li>
+
           <li><a href="#">Rastrear mi pedido</a></li>
+
           <li><a href="#">Favoritos</a></li>
         </ul>
       </div>
@@ -319,13 +520,14 @@
   
         <ul>
           <li><a href="paginas/contacto.html">Contáctanos</a></li>
+
           <li><a href="#">Trabajemos juntos</a></li>
         </ul>
 
         <div class="espacioRedes">
           <a class="redes" href="https://www.instagram.com/musapapeleria.uy/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
 
-          <a class="redes" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
+          <a class="redes" href="https://www.facebook.com/musadesign.uy" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
 
           <a class="redes" href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-pinterest"></i></a>
 
@@ -337,6 +539,7 @@
     <p class="piePagina">2023 MUSA PAPELERÍA | URUGUAY</p>
   </footer>
 
+  
   <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

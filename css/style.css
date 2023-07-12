@@ -80,6 +80,26 @@ header {
 .navCategorias .menu .search {
   width: 93px;
 }
+.navCategorias .menu .search .modalBuscador {
+  padding: 20px;
+  border: none;
+}
+.navCategorias .menu .search .modalBuscador .form-control {
+  border: 1px solid #fdbfde;
+  color: #F11585;
+}
+.navCategorias .menu .search .modalBuscador .form-control:focus {
+  border: 1px solid #F11585;
+  box-shadow: none;
+}
+.navCategorias .menu .search .modalBuscador .formButton {
+  border: none;
+  color: #F11585;
+  --bs-btn-color: white;
+  --bs-btn-hover-color: $colorPrincipal;
+  --bs-btn-hover-bg: white;
+  --bs-btn-active-bg: $colorPrincipal;
+}
 .navCategorias .menu .logo {
   align-items: center;
 }
@@ -355,44 +375,44 @@ footer .piePagina {
   font-weight: 700;
 }
 
-.seccionArticulos .titulo {
+.carruselBlog .titulo {
   font-family: "Regard";
   font-weight: 900;
   font-size: 32px;
   text-align: center;
   padding: 20px 0px;
 }
-.seccionArticulos .articulosSecc {
+.carruselBlog .carousel-inner .seccionArticulos .articulosSecc {
   display: flex;
   justify-content: space-between;
   margin: 0px 40px;
 }
-.seccionArticulos .articulosSecc .tarjetaArticulo {
+.carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo {
   width: 413px;
   position: relative;
   overflow: hidden;
 }
-.seccionArticulos .articulosSecc .tarjetaArticulo a img {
+.carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo a img {
   padding-bottom: 18px;
   width: 100%;
   height: 249px;
   object-fit: cover;
 }
-.seccionArticulos .articulosSecc .tarjetaArticulo h5 {
+.carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo h5 {
   font-weight: 700;
   font-size: 20px;
   padding-bottom: 12px;
 }
-.seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjeta {
+.carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjeta {
   width: 413px;
   padding-bottom: 12px;
 }
-.seccionArticulos .botonBlog {
+.carruselBlog .botonBlog {
   margin: 30px 40px;
   display: flex;
   justify-content: center;
 }
-.seccionArticulos .botonBlog .blog {
+.carruselBlog .botonBlog .blog {
   background-color: #F11585;
   border: none;
   text-align: center;
@@ -850,6 +870,7 @@ section .mostrando {
 .articuloBlog .textoArticulo {
   font-size: 18px;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 .articuloBlog .textoArticulo h2 {
   font-weight: 700;
@@ -1113,7 +1134,7 @@ section .mostrando {
     margin-bottom: 20px;
   }
   .navCategorias .navbar-nav form .form-control {
-    border: 1px solid #F11585;
+    border: 1px solid #fdbfde;
     margin: 0px 0px 0px 10px;
     color: #F11585;
   }
@@ -1121,7 +1142,7 @@ section .mostrando {
     border: 1px solid #F11585;
     box-shadow: none;
   }
-  .navCategorias .navbar-nav form .btn-outline-success {
+  .navCategorias .navbar-nav form .formButton {
     border: none;
     margin: 0px 10px 0px 0px;
     color: #fdbfde;

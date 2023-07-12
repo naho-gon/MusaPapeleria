@@ -85,6 +85,30 @@ header{
 
     .search{
       width: 93px;
+
+      .modalBuscador{
+        padding: 20px;
+        border: none;
+
+        .form-control{
+          border: 1px solid $colorSecundario;
+          color: $colorPrincipal;
+
+          &:focus{
+            border: $borde;
+            box-shadow: none;
+          }
+        }
+
+        .formButton{
+          border: none;
+          color: $colorPrincipal;     
+          --bs-btn-color: white;
+          --bs-btn-hover-color: $colorPrincipal;
+          --bs-btn-hover-bg: white;
+          --bs-btn-active-bg: $colorPrincipal;
+        }
+      }
     }
 
     .logo{

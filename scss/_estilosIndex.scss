@@ -90,38 +90,40 @@
   }
 }
 
-.seccionArticulos{
+.carruselBlog{
   .titulo{
     @include titulo;
   }
 
-  .articulosSecc{
-    @include flex-between;
-    margin: $margenPagina;
-  
-    .tarjetaArticulo{
-      width: 413px;
-      position: relative;
-      overflow: hidden;
-  
-      a img{
-        padding-bottom: 18px;
-        width: 100%;
-        height: 249px;
-        object-fit: cover;
-      }
-  
-      h5{
-        font-weight: 700;
-        font-size: 20px;
-        padding-bottom: 12px;
-      }
-  
-      .textoTarjeta{
+  .carousel-inner .seccionArticulos{
+    .articulosSecc{
+      @include flex-between;
+      margin: $margenPagina;
+    
+      .tarjetaArticulo{
         width: 413px;
-        padding-bottom: 12px;
+        position: relative;
+        overflow: hidden;
+    
+        a img{
+          padding-bottom: 18px;
+          width: 100%;
+          height: 249px;
+          object-fit: cover;
+        }
+    
+        h5{
+          font-weight: 700;
+          font-size: 20px;
+          padding-bottom: 12px;
+        }
+    
+        .textoTarjeta{
+          width: 413px;
+          padding-bottom: 12px;
+        }
       }
-    }
+    }  
   }
 
   .botonBlog{
