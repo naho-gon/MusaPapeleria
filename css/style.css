@@ -341,7 +341,7 @@ footer .piePagina {
 }
 .frase .tituloFrase {
   font-family: "Regard";
-  font-weight: 900;
+  font-weight: 800;
   font-size: 40px;
   padding: 0px 0px 25px 0px;
 }
@@ -349,6 +349,7 @@ footer .piePagina {
   font-size: 20px;
   padding: 0px 40px;
   max-width: 967px;
+  font-weight: 400;
 }
 
 .info {
@@ -490,7 +491,7 @@ section .headerCategoria .cajaFyO div .offcanvas .offcanvas-header .botonCerrar 
 section .headerCategoria .cajaFyO div .offcanvas .offcanvas-body {
   padding: 0px 16px 16px 16px;
 }
-section .headerCategoria .cajaFyO div .offcanvas .offcanvas-body div h4 {
+section .headerCategoria .cajaFyO div .offcanvas .offcanvas-body div h3 {
   color: #F11585;
   font-size: 18px;
   font-weight: 700;
@@ -598,6 +599,9 @@ section .mostrando {
   width: 193px;
   height: 193px;
   object-fit: cover;
+}
+.fotosProductos #bannerProducto {
+  display: none;
 }
 
 .areaProductos {
@@ -799,7 +803,7 @@ section .mostrando {
   margin: 65px 40px 0px 40px;
   font-size: 22px;
 }
-.categorias h4 {
+.categorias h2 {
   padding-bottom: 20px;
   font-weight: 900;
 }
@@ -946,11 +950,13 @@ section .mostrando {
 .textoComentario {
   font-size: 16px;
   padding-bottom: 15px;
+  font-weight: 400;
 }
 
 .fechaComentario {
   font-size: 12px;
   padding-bottom: 10px;
+  font-weight: 400;
 }
 
 .enviarComentario {
@@ -1088,19 +1094,21 @@ section .mostrando {
 }
 
 @media screen and (max-width: 500px) {
+  .body {
+    font-size: 14px;
+  }
   .oferta {
-    padding: 8px 30px;
+    padding: 15px 20px;
     text-align: center;
     font-size: 16px;
   }
   .navCategorias {
     justify-content: space-between;
-    padding-right: 10px;
   }
   .navCategorias .menu {
     padding: 0px 20px 0px 0px;
     height: 55px;
-    width: 85%;
+    width: 80%;
   }
   .navCategorias .menu .logo img {
     width: 180px;
@@ -1124,7 +1132,7 @@ section .mostrando {
   .navCategorias .navbar-nav {
     justify-content: start;
     padding: 30px 0px;
-    width: 70%;
+    width: 80%;
     height: 100vh;
     background-color: white;
   }
@@ -1135,8 +1143,9 @@ section .mostrando {
   }
   .navCategorias .navbar-nav form .form-control {
     border: 1px solid #fdbfde;
-    margin: 0px 0px 0px 10px;
+    margin: 0px 0px 15px 20px;
     color: #F11585;
+    width: 250px;
   }
   .navCategorias .navbar-nav form .form-control:focus {
     border: 1px solid #F11585;
@@ -1151,29 +1160,36 @@ section .mostrando {
     --bs-btn-hover-bg: white;
     --bs-btn-active-bg: $colorPrincipal;
   }
+  .navCategorias .navbar-nav .nav-link:hover {
+    padding: 0px;
+  }
   .carousel-indicators {
     margin-bottom: 5px;
   }
+  #bannerPrincipal .carousel-item {
+    height: 500px;
+  }
+  #bannerPrincipal .carousel-item img {
+    height: 500px;
+  }
   .flechasBanner {
     display: none;
-  }
-  .banner {
-    background-image: url("../imagenes/bannerLargo.png");
-    height: 648px;
   }
   .migas {
     display: none;
   }
   .newsLetter {
-    padding: 0px 20px;
+    padding: 30px 20px;
+    height: auto;
   }
   .newsLetter .tituloNL {
     width: 100%;
-    font-size: 32px;
+    font-size: 30px;
+    padding-bottom: 10px;
   }
   .newsLetter .textoNL {
     width: 100%;
-    font-size: 14px;
+    font-size: 18px;
     padding-bottom: 25px;
   }
   .newsLetter .formSubs {
@@ -1184,10 +1200,12 @@ section .mostrando {
   .newsLetter .formSubs .email {
     width: 100%;
     height: 40px;
+    font-size: 12px;
   }
   .newsLetter .formSubs .subs {
     max-width: 100%;
     height: 40px;
+    padding: 0px 5px;
     font-size: 16px;
   }
   footer .footer {
@@ -1216,35 +1234,43 @@ section .mostrando {
     font-size: 35px;
   }
   .gridProducto {
-    grid-template-columns: 500px;
+    grid-template-columns: auto;
     grid-template-rows: repeat(7, auto);
     grid-template-areas: "header" "fotosProductos" "infoProducto" "sobreProducto" "especificaciones" "gustarte" "footer";
   }
   .gridBlog {
-    grid-template-columns: 500px;
+    grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "articulos" "paginacion" "categorias" "footer";
   }
   .gridArticulo {
-    grid-template-columns: 500px;
+    grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "contenido" "comentarios" "articulosRyD" "footer";
   }
   .gridContacto {
-    grid-template-columns: 500px;
+    grid-template-columns: auto;
     grid-template-rows: repeat(5, auto);
     grid-template-areas: "header" "infoContacto" "enviarContacto" "newsLetter" "footer";
   }
   .seccionProductos {
     margin: 0px;
   }
-  .producto {
-    width: 220px;
+  .producto a {
+    width: 185px;
     margin-bottom: 20px;
     font-size: 14px;
   }
-  .producto img {
-    width: 220px;
+  .producto a img {
+    width: 185px;
+    height: auto;
+  }
+  .producto a img:hover {
+    transform: none;
+    padding-bottom: 0px;
+  }
+  .producto a p, .producto a ul {
+    font-size: 13px;
   }
   .titulo {
     font-size: 28px;
@@ -1271,38 +1297,41 @@ section .mostrando {
   }
   .info .infoTarjeta {
     width: 150px;
-    height: 130px;
     font-size: 14px;
     margin: 0px;
   }
-  .info .infoTarjeta img {
-    width: 70px;
+  .carruselBlog .carousel-inner .seccionArticulos {
+    height: auto;
   }
-  .seccionArticulos .articulosSecc {
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc {
     margin: 0px;
-    justify-content: center;
-    overflow: hidden;
+    gap: 10px;
+    padding: 0px 15px;
   }
-  .seccionArticulos .articulosSecc .tarjetaArticulo {
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo {
     width: 220px;
-    margin: 0px 10px;
   }
-  .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjeta, .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjetaP {
-    width: 220px;
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjeta, .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjetaP {
+    width: auto;
     font-size: 14px;
   }
-  .seccionArticulos .articulosSecc .tarjetaArticulo a img, .seccionArticulos .articulosSecc .tarjetaArticulop a img {
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo a img, .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulop a img {
     width: 220px;
+    height: 133px;
     padding-bottom: 10px;
   }
-  .seccionArticulos .articulosSecc .tarjetaArticulo h5, .seccionArticulos .articulosSecc .tarjetaArticulop h5 {
-    font-size: 19px;
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo h5, .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulop h5 {
+    font-size: 17px;
   }
-  .seccionArticulos .botonBlog {
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .noEnCel {
+    display: none;
+  }
+  .carruselBlog .botonBlog {
     margin: 30px 20px;
   }
-  .seccionArticulos .botonBlog .blog {
+  .carruselBlog .botonBlog .blog {
     width: 100%;
+    font-size: 16px;
   }
   .fecha {
     height: 45px;
@@ -1323,41 +1352,60 @@ section .mostrando {
     justify-content: center;
     margin: 25px 20px;
   }
+  section .headerCategoria .cajaFyO {
+    justify-content: center;
+    gap: 10px;
+  }
+  section .headerCategoria .cajaFyO div .filtro {
+    width: 50px;
+  }
+  section .headerCategoria .cajaFyO div .ordenar {
+    width: 220px;
+  }
+  section .headerCategoria .cajaFyO div .offcanvas {
+    width: 320px;
+  }
+  section .headerCategoria .cajaFyO div .offcanvas .botonOffCanvas .productosOffCanvas {
+    width: 288px;
+  }
   section .tituloPagina {
     text-align: center;
     margin-bottom: 10px;
   }
   section .contenedorProductos {
     margin: 0px 20px;
+    justify-content: center;
+    gap: 0px 15px;
   }
   section .contenedorProductos .producto {
-    width: 220px;
+    width: 185px;
   }
   section .aire {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
   section .mostrando {
     margin: 10px 20px 28px 20px;
+    font-size: 12px;
   }
   .fotosProductos {
-    width: 460px;
-    margin: 20px 0px;
+    width: 100%;
+    margin: 0px;
+    padding-bottom: 20px;
     justify-self: center;
   }
   .fotosProductos .fotoGrande {
-    width: 460px;
-    padding-bottom: 0px;
-  }
-  .fotosProductos .fotoGrande img {
-    width: 460px;
-    height: 600px;
+    display: none;
   }
   .fotosProductos .fotosSecundarias {
     display: none;
   }
+  .fotosProductos #bannerProducto {
+    display: flex;
+  }
   .areaProductos {
-    margin: 0px 20px;
-    width: 460px;
+    margin: 0px;
+    padding: 0px 20px;
+    width: 100%;
   }
   .areaProductos .infoProducto .iconoFav {
     font-size: 28px;
@@ -1377,7 +1425,7 @@ section .mostrando {
     height: 40px;
   }
   .areaProductos .infoProducto div .cajaCarrito .carrito {
-    width: 460px;
+    width: 100%;
     margin-left: 0px;
   }
   .tituloProducto {
@@ -1385,12 +1433,13 @@ section .mostrando {
     padding-bottom: 15px;
   }
   .sobreProducto {
-    margin: 40px 20px 15px 20px;
-    width: 460px;
+    margin: 0px;
+    padding: 40px 20px 15px 20px;
+    width: 100%;
     justify-self: start;
   }
   .sobreProducto article .tamanioDescripcion {
-    width: 460px;
+    width: 100%;
   }
   .sobreProducto article .vaLeerMas {
     display: none;
@@ -1405,418 +1454,174 @@ section .mostrando {
     font-size: 14px;
   }
   .descripcion {
-    width: 420px;
+    width: 100%;
     font-size: 16px;
   }
   .especificaciones {
-    margin: 20px 20px 10px 20px;
+    margin: 0px;
+    padding: 20px 20px 10px 20px;
+  }
+  .especificaciones article .especificacionItem {
+    width: 100%;
   }
   .aireProducto {
-    margin-bottom: 20px;
-  }
-  .gustarte {
-    flex-wrap: nowrap;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0px;
-  }
-  .gustarte .gustarteCel {
-    margin-left: 15px;
-  }
-  .gustarte .gustarteCelNo {
-    display: none;
+    padding-top: 20px;
   }
   .articulosBlog {
-    margin-left: 20px;
-    margin-top: 25px;
+    padding: 25px 20px 0px 20px;
+    margin: 0px;
     justify-self: start;
   }
   .articulosBlog .contenedorArticulos {
-    margin: 20px 0px;
-    width: 460px;
+    justify-content: center;
+    gap: 25px 15px;
+    margin: 0px;
+    padding: 20px 0px;
+    width: 100%;
   }
   .tarjetaArticulop {
-    width: 220px;
+    width: 185px;
   }
   .tarjetaArticulop a img {
-    width: 220px;
+    width: 185px;
   }
   .tarjetaArticulop .textoTarjetaP {
-    width: 220px;
+    width: 185px;
   }
   .categorias {
-    margin: 0px 20px 15px 20px;
+    margin: 0px;
+    padding: 0px 20px 15px 20px;
     font-size: 18px;
   }
   .categorias a {
     font-size: 14px;
   }
   .paginacion {
-    margin: 0px 20px 35px 20px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px 35px 20px;
   }
   .paginacion ul {
-    width: 460px;
+    width: 100%;
+  }
+  .paginacion ul li {
+    width: 30px;
+    height: 30px;
   }
   .articuloBlog {
     justify-self: start;
-    width: 460px;
-    margin: 25px 20px 0px 20px;
+    width: 100%;
+    margin: 0px;
+    padding: 25px 20px 0px 20px;
   }
   .articuloBlog .tituloArticulo h1 {
     font-size: 32px;
     padding-bottom: 20px;
   }
+  .articuloBlog .tituloArticulo .infoArticulo {
+    gap: 15px;
+  }
   .articuloBlog .tituloArticulo .infoArticulo p, .articuloBlog .tituloArticulo .infoArticulo ul {
     font-size: 14px;
   }
-  .articuloBlog .tituloArticulo .infoArticulo div .compartirArticulo {
+  .articuloBlog .tituloArticulo .infoArticulo .espacioRedes .compartirArticulo {
     font-size: 30px;
   }
+  .articuloBlog section {
+    width: 100%;
+  }
   .articuloBlog section .fotoArticulo {
-    width: 460px;
+    width: 100%;
+    height: 450px;
   }
   .articuloBlog .textoArticulo {
     font-size: 16px;
   }
+  .articuloBlog .textoArticulo h2 {
+    font-size: 18px;
+  }
+  .articuloBlog .textoArticulo p, .articuloBlog .textoArticulo ul {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .articuloBlog .textoArticulo div img {
+    width: 100%;
+    height: auto;
+  }
   .articulosRyD {
-    margin: 20px 20px 0px 20px;
+    margin: 0px;
+    padding: 20px 20px 15px 20px;
   }
   .articulosRyD .articulosR, .articulosRyD .articulosD {
-    width: 460px;
     margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
   }
   .articulosR h3, .articulosD h3 {
-    width: 460px;
+    width: 100%;
   }
   .comentarios {
-    width: 460px;
-    margin: 0px 20px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
     justify-self: start;
   }
   .comentarios .comentario img, .comentarios .comentarioUltimo img {
     width: 70px;
     height: 70px;
   }
+  .nombreComentario {
+    padding-bottom: 5px;
+  }
   .textoComentario {
     font-size: 14px;
   }
   .enviarComentario {
-    width: 460px;
+    width: 100%;
     margin-bottom: 20px;
     padding: 20px;
   }
   .enviarComentario form .dejarComentario {
-    width: 420px;
+    width: 100%;
   }
   .enviarComentario form .bArticulo {
     margin-left: 0px;
-    width: 420px;
+    width: 100%;
   }
   .infoContacto {
     justify-self: start;
-    width: 460px;
-    margin: 25px 20px;
+    width: 100%;
+    padding: 25px 20px;
+    margin: 0px;
   }
   .infoContacto .datosContacto {
     padding-bottom: 35px;
   }
   .enviarContacto {
-    width: 460px;
-    margin: 25px 20px 37px 20px;
+    width: 100%;
+    margin: 0px;
+    padding: 25px 20px 37px 20px;
     align-self: flex-start;
   }
   .enviarContacto form div .nYaInput {
-    width: 460px;
+    width: 100%;
   }
   .enviarContacto form .emailTel div .emailContacto, .enviarContacto form .emailTel div .telContacto {
-    width: 222.5px;
+    width: 100%;
   }
   .enviarContacto form div .mensajeContacto {
-    width: 460px;
+    width: 100%;
     font-size: 12px;
+    padding: 7px 0px 0px 7px;
   }
   .enviarContacto form input {
     font-size: 12px;
+    padding-left: 7px;
   }
   .enviarContacto form .enviarBoton {
-    width: 460px;
-    height: 40px;
-    cursor: pointer;
-  }
-}
-@media screen and (min-width: 501px) and (max-width: 1199px) {
-  .navCategorias {
-    justify-content: space-between;
-    padding-right: 10px;
-  }
-  .navCategorias .menu {
-    padding: 0px 20px 0px 0px;
-    height: 55px;
-    width: 85%;
-    justify-content: space-between;
-  }
-  .navCategorias .menu .logo {
-    order: -1;
-  }
-  .navCategorias .menu .logo img {
-    width: 180px;
-  }
-  .navCategorias .menu .iconosMenu {
-    width: 24px;
-    justify-content: end;
-  }
-  .navCategorias .menu .search {
-    justify-content: end;
-    margin-left: 25px;
-    width: 24px;
-  }
-  .navCategorias .menu .user, .navCategorias .menu .fav, .navCategorias .menu .search {
-    display: none;
-  }
-  .navCategorias .navbar-toggler {
-    border: none;
-    color: #F11585;
-    padding-left: 20px;
-    order: -3;
-  }
-  .navCategorias .navbar-toggler:focus {
-    box-shadow: none;
-  }
-  .navCategorias .navbar-nav {
-    justify-content: start;
-    padding: 30px 0px;
-    height: 100vh;
-    background-color: white;
-  }
-  .navCategorias .navbar-nav form .form-control, .navCategorias .navbar-nav form .formButton {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .navCategorias .navbar-nav form .form-control {
-    border: 1px solid #FFA6D3;
-    margin: 0px 0px 0px 10px;
-    color: #F11585;
-  }
-  .navCategorias .navbar-nav form .form-control:focus {
-    border: 1px solid #F11585;
-    box-shadow: none;
-  }
-  .navCategorias .navbar-nav form .btn-outline-success {
-    border: none;
-    margin: 0px 10px 0px 0px;
-    color: #FFA6D3;
-    --bs-btn-color: white;
-    --bs-btn-hover-color: #F11585;
-    --bs-btn-hover-bg: white;
-    --bs-btn-active-bg: #F11585;
-  }
-  .flechasBanner {
-    display: none;
-  }
-  .migas {
-    display: none;
-  }
-  .newsLetter .tituloNL {
     width: 100%;
-    font-size: 32px;
-  }
-  .newsLetter .textoNL {
-    width: 100%;
-    font-size: 14px;
-    padding-bottom: 25px;
-  }
-  .newsLetter .formSubs .email {
-    width: 95%;
-    height: 40px;
-  }
-  .newsLetter .formSubs .subs {
-    max-width: 100%;
-    height: 40px;
-    font-size: 16px;
-  }
-  .footer {
-    gap: 25px 15px;
-  }
-  .gridArticulo {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header header" "contenido articulosRyD" "comentarios comentarios" "footer footer";
-  }
-  .seccionProductos {
-    margin: 0px 0px;
-  }
-  .seccionProductos .artProducto .producto {
-    width: 220px;
-    margin-bottom: 15px;
-    font-size: 14px;
-  }
-  .seccionProductos .artProducto .producto img {
-    width: 220px;
-  }
-  .artProductos {
-    justify-content: space-evenly;
-    gap: 0px 15px;
-    flex-wrap: wrap;
-    margin: 0px 20px 15px 20px;
-  }
-  .tituloFrase {
-    font-size: 28px;
-    padding: 0px 20px 25px 20px;
-  }
-  .textoFrase {
-    max-width: 837px;
-    font-size: 16px;
-    padding: 0px 20px;
-  }
-  .info {
-    height: 100%;
-    margin: 20px 20px;
-    flex-wrap: wrap;
-    gap: 15px 20px;
-    justify-content: space-evenly;
-  }
-  .info .infoTarjeta {
-    margin: 0px 20px;
-  }
-  .seccionArticulos .articulosSecc {
-    margin: 0px;
-    justify-content: center;
-    overflow: hidden;
-  }
-  .seccionArticulos .articulosSecc .tarjetaArticulo {
-    margin: 0px 10px;
-  }
-  .seccionArticulos .articulosSecc .tarjetaArticulo a img, .seccionArticulos .articulosSecc .tarjetaArticulop a img {
-    padding-bottom: 10px;
-  }
-  section .headerCategoria {
-    flex-wrap: wrap;
-    margin: 25px 20px;
-  }
-  section .contenedorProductos {
-    justify-content: space-evenly;
-    margin: 0px 20px;
-    gap: 0px 15px;
-  }
-  section .aire {
-    margin-bottom: 20px;
-  }
-  section .mostrando {
-    margin: 10px 20px 28px 20px;
-  }
-  .fotosProductos {
-    margin-left: 30px;
-    margin-top: 40px;
-  }
-  .fotosProductos .fotoGrande {
-    width: 700px;
-  }
-  .fotosProductos .fotoGrande img {
-    width: 700px;
-  }
-  .fotosProductos .fotosSecundarias .fotosChicas {
-    width: 160px;
-  }
-  .areaProductos {
-    margin: 40px 30px 0px 20px;
-    width: 300px;
-  }
-  .areaProductos .infoProducto .iconoFav {
-    font-size: 28px;
-  }
-  .areaProductos .infoProducto .precio {
-    font-size: 28px;
-  }
-  .areaProductos .infoProducto div .cajaCarrito .contador {
-    width: 70px;
-  }
-  .sobreProducto {
-    width: 700px;
-    margin-left: 30px;
-  }
-  .sobreProducto article .tamanioDescripcion {
-    width: 650px;
-  }
-  .articuloBlog {
-    width: 460px;
-    margin: 0px 20px;
-  }
-  .articuloBlog .tituloArticulo h1 {
-    font-size: 32px;
-    padding-bottom: 20px;
-  }
-  .articuloBlog .tituloArticulo .infoArticulo p, .articuloBlog .tituloArticulo .infoArticulo ul {
-    font-size: 14px;
-  }
-  .articuloBlog .tituloArticulo .infoArticulo div .compartirArticulo {
-    font-size: 30px;
-  }
-  .articuloBlog section .fotoArticulo {
-    width: 460px;
-  }
-  .articuloBlog .textoArticulo {
-    font-size: 16px;
-  }
-  .articulosRyD {
-    width: 336px;
-    margin: 20px 20px 0px 20px;
-  }
-  .articulosRyD .articulosR, .articulosRyD .articulosD {
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .comentarios {
-    justify-self: center;
-    margin: 0px 20px;
-  }
-  .comentarios .comentario img, .comentarios .comentarioUltimo img {
-    width: 70px;
-    height: 70px;
-  }
-  .textoComentario {
-    font-size: 14px;
-  }
-  .enviarComentario {
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-  .enviarComentario form .bArticulo {
-    margin-left: 651px;
-  }
-  .infoContacto {
-    width: 460px;
-    margin: 25px 20px;
-  }
-  .infoContacto .datosContacto {
-    padding-bottom: 35px;
-  }
-  .enviarContacto {
-    width: 460px;
-    margin: 25px 20px 37px 20px;
-  }
-  .enviarContacto form div .nYaInput {
-    width: 460px;
-  }
-  .enviarContacto form .emailTel div .emailContacto, .enviarContacto form .emailTel div .telContacto {
-    width: 222.5px;
-  }
-  .enviarContacto form div .mensajeContacto {
-    width: 460px;
-    font-size: 12px;
-  }
-  .enviarContacto form input {
-    font-size: 12px;
-  }
-  .enviarContacto form .enviarBoton {
-    width: 460px;
-    height: 40px;
   }
 }
 
