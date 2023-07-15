@@ -39,6 +39,8 @@
 
 .artProductos{
   @include flex-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .frase{

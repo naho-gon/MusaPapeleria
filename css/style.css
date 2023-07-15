@@ -327,6 +327,8 @@ footer .piePagina {
 .artProductos {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .frase {
@@ -1155,7 +1157,7 @@ section .mostrando {
     border: none;
     margin: 0px 10px 0px 0px;
     color: #fdbfde;
-    --bs-btn-color: white;
+    --bs-btn-color: $letrasBlancas;
     --bs-btn-hover-color: $colorPrincipal;
     --bs-btn-hover-bg: white;
     --bs-btn-active-bg: $colorPrincipal;
@@ -1377,8 +1379,12 @@ section .mostrando {
     justify-content: center;
     gap: 0px 15px;
   }
-  section .contenedorProductos .producto {
+  section .contenedorProductos .producto a {
     width: 185px;
+  }
+  section .contenedorProductos .producto a img:hover {
+    transform: none;
+    padding-bottom: 0px;
   }
   section .aire {
     margin-bottom: 0px;
@@ -1622,6 +1628,468 @@ section .mostrando {
   }
   .enviarContacto form .enviarBoton {
     width: 100%;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 1199px) {
+  .oferta {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .navCategorias {
+    justify-content: space-between;
+  }
+  .navCategorias .menu {
+    padding: 0px 20px 0px 0px;
+    height: 55px;
+    width: 85%;
+  }
+  .navCategorias .menu .logo img {
+    width: 180px;
+  }
+  .navCategorias .menu .iconosMenu {
+    width: 24px;
+    justify-content: end;
+  }
+  .navCategorias .menu .user, .navCategorias .menu .fav, .navCategorias .menu .search {
+    display: none;
+  }
+  .navCategorias .navbar-toggler {
+    border: none;
+    color: #F11585;
+    padding-left: 20px;
+    order: -3;
+  }
+  .navCategorias .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .navCategorias .navbar-nav {
+    justify-content: start;
+    padding: 30px 0px;
+    height: 100vh;
+    background-color: white;
+  }
+  .navCategorias .navbar-nav form .form-control, .navCategorias .navbar-nav form .formButton {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .navCategorias .navbar-nav form .form-control {
+    border: 1px solid #fdbfde;
+    margin: 0px 0px 0px 10px;
+    color: #F11585;
+  }
+  .navCategorias .navbar-nav form .form-control:focus {
+    border: 1px solid #F11585;
+    box-shadow: none;
+  }
+  .navCategorias .navbar-nav form .formButton {
+    border: none;
+    margin: 0px 10px 0px 0px;
+    color: #fdbfde;
+    --bs-btn-color: $letrasBlancas;
+    --bs-btn-hover-color: $colorPrincipal;
+    --bs-btn-hover-bg: white;
+    --bs-btn-active-bg: $colorPrincipal;
+  }
+  .navCategorias .navbar-nav .nav-link:hover {
+    padding: 0px;
+  }
+  .carousel-indicators {
+    margin-bottom: 5px;
+  }
+  .carousel-item img {
+    height: auto;
+  }
+  .banner img {
+    height: auto;
+  }
+  .migas {
+    display: none;
+  }
+  .newsLetter {
+    padding: 30px 20px;
+    height: auto;
+  }
+  .newsLetter .tituloNL {
+    width: 100%;
+    font-size: 30px;
+    padding-bottom: 10px;
+  }
+  .newsLetter .textoNL {
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+  .newsLetter .formSubs {
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px 20px;
+  }
+  .newsLetter .formSubs .email {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+  }
+  .newsLetter .formSubs .subs {
+    max-width: 100%;
+    height: 40px;
+    padding: 0px 5px;
+    font-size: 16px;
+  }
+  footer .footer {
+    gap: 25px 15px;
+    margin: 0px 23px;
+    padding: 30px 0px 15px 0px;
+  }
+  footer .footer .infoFooter h6 {
+    font-size: 20px;
+  }
+  footer .footer .tabletFooterG {
+    width: 168px;
+    margin-bottom: 25px;
+  }
+  footer .footer .tabletFooter {
+    width: 150px;
+    margin-bottom: 25px;
+  }
+  footer a {
+    font-size: 14px;
+  }
+  footer .piePagina {
+    font-size: 14px;
+  }
+  .espacioRedes {
+    width: 168px;
+  }
+  .espacioRedes .redes {
+    font-size: 28px;
+  }
+  .gridProducto {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas: "header header" "fotosProductos infoProducto" "sobreProducto sobreProducto" "especificaciones especificaciones" "gustarte gustarte" "footer footer";
+  }
+  .gridArticulo {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "header header" "contenido articulosRyD" "comentarios comentarios" "footer footer";
+  }
+  .seccionProductos {
+    margin: 0px;
+  }
+  .seccionProductos .producto a {
+    width: 170px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .seccionProductos .producto a img {
+    width: 170px;
+    height: auto;
+  }
+  .seccionProductos .producto a img:hover {
+    transform: none;
+    padding-bottom: 0px;
+  }
+  .seccionProductos .producto a p, .seccionProductos .producto a ul {
+    font-size: 14px;
+  }
+  .artProductos {
+    justify-content: space-evenly;
+    gap: 0px 15px;
+    flex-wrap: wrap;
+    margin: 0px 20px 15px 20px;
+  }
+  .frase .tituloFrase {
+    font-size: 28px;
+    padding: 0px 20px 25px 20px;
+  }
+  .frase .textoFrase {
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+  .info {
+    height: 100%;
+    margin: 20px 20px;
+    flex-wrap: wrap;
+    gap: 15px 10px;
+    justify-content: space-evenly;
+  }
+  .info .infoTarjeta {
+    margin: 0px;
+  }
+  .carruselBlog .carousel-inner .seccionArticulos {
+    height: auto;
+  }
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc {
+    justify-content: center;
+    margin: 0px;
+    gap: 10px;
+    padding: 0px 15px;
+  }
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo {
+    width: 220px;
+  }
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjeta, .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo .textoTarjetaP {
+    width: auto;
+    font-size: 14px;
+  }
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo a img, .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulop a img {
+    width: 220px;
+    height: 133px;
+    padding-bottom: 10px;
+  }
+  .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulo h5, .carruselBlog .carousel-inner .seccionArticulos .articulosSecc .tarjetaArticulop h5 {
+    font-size: 17px;
+  }
+  section .headerCategoria {
+    flex-wrap: wrap;
+    gap: 0px 25px;
+    margin: 25px 20px;
+  }
+  section .contenedorProductos {
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    gap: 0px 15px;
+  }
+  section .contenedorProductos .producto {
+    width: 232px;
+  }
+  section .contenedorProductos .producto a {
+    width: 100%;
+  }
+  section .contenedorProductos .producto a img {
+    width: 100%;
+    height: 80%;
+  }
+  section .contenedorProductos .producto a img:hover {
+    transform: none;
+    padding-bottom: 0px;
+  }
+  section .aire {
+    margin-bottom: 20px;
+  }
+  section .mostrando {
+    margin: 10px 20px 28px 20px;
+  }
+  .fotosProductos {
+    width: 100%;
+    margin: 0px;
+    padding: 40px 0px 0px 20px;
+    max-width: 500px;
+  }
+  .fotosProductos .fotoGrande {
+    width: 100%;
+  }
+  .fotosProductos .fotoGrande img {
+    width: 100%;
+  }
+  .fotosProductos .fotosSecundarias .fotosChicas {
+    width: 112px;
+    height: 112px;
+  }
+  .areaProductos {
+    margin: 0px;
+    padding: 40px 20px 0px 20px;
+    max-width: 265px;
+    width: 100%;
+  }
+  .areaProductos .infoProducto .iconoFav {
+    font-size: 28px;
+  }
+  .areaProductos .infoProducto .precio {
+    font-size: 28px;
+  }
+  .areaProductos .infoProducto div .cajaCarrito {
+    flex-wrap: wrap;
+    gap: 20px 0px;
+  }
+  .areaProductos .infoProducto div .cajaCarrito .contador {
+    width: 70px;
+    height: 40px;
+  }
+  .areaProductos .infoProducto div .cajaCarrito .carrito {
+    width: 100%;
+    margin: 0px;
+    font-size: 17px;
+  }
+  .tituloProducto {
+    font-size: 28px;
+    width: 87%;
+  }
+  .sobreProducto {
+    width: 100%;
+    margin: 0px;
+    padding: 25px 30px 0px 30px;
+  }
+  .sobreProducto article .tamanioDescripcion {
+    width: 100%;
+  }
+  .especificaciones {
+    width: 100%;
+    margin: 0px;
+    padding: 25px 30px 0px 30px;
+  }
+  .aireProducto {
+    margin-top: 15px;
+  }
+  .articulosBlog {
+    padding: 25px 0px 0px 20px;
+    margin: 0px;
+    width: 100%;
+  }
+  .articulosBlog .contenedorArticulos {
+    gap: 25px 15px;
+    margin: 0px;
+    padding: 20px 0px;
+    max-width: 558px;
+  }
+  .tarjetaArticulop {
+    max-width: 271px;
+    width: 100%;
+  }
+  .tarjetaArticulop a img {
+    width: 100%;
+  }
+  .tarjetaArticulop .textoTarjetaP {
+    width: 100%;
+  }
+  .categorias {
+    margin: 0px;
+    padding: 40px 20px 15px 20px;
+    font-size: 18px;
+  }
+  .categorias a {
+    font-size: 14px;
+  }
+  .paginacion {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px 35px 20px;
+  }
+  .paginacion ul {
+    width: 100%;
+  }
+  .paginacion ul li {
+    width: 30px;
+    height: 30px;
+  }
+  .articuloBlog {
+    justify-self: start;
+    width: 100%;
+    margin: 0px;
+    padding: 25px 20px 0px 20px;
+  }
+  .articuloBlog .tituloArticulo h1 {
+    font-size: 32px;
+    padding-bottom: 20px;
+  }
+  .articuloBlog .tituloArticulo .infoArticulo {
+    gap: 15px;
+  }
+  .articuloBlog .tituloArticulo .infoArticulo p, .articuloBlog .tituloArticulo .infoArticulo ul {
+    font-size: 14px;
+  }
+  .articuloBlog .tituloArticulo .infoArticulo .espacioRedes .compartirArticulo {
+    font-size: 30px;
+  }
+  .articuloBlog section {
+    width: 100%;
+  }
+  .articuloBlog section .fotoArticulo {
+    width: 100%;
+    height: 450px;
+  }
+  .articuloBlog .textoArticulo {
+    font-size: 16px;
+  }
+  .articuloBlog .textoArticulo h2 {
+    font-size: 18px;
+  }
+  .articuloBlog .textoArticulo p, .articuloBlog .textoArticulo ul {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .articuloBlog .textoArticulo div img {
+    width: 100%;
+    height: auto;
+  }
+  .articulosRyD {
+    max-width: 230px;
+    margin: 0px;
+    padding: 35px 20px 15px 0px;
+  }
+  .articulosRyD .articulosR, .articulosRyD .articulosD {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+  }
+  .articulosR h3, .articulosD h3 {
+    width: 93%;
+    font-size: 24px;
+  }
+  .comentarios {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
+    justify-self: start;
+  }
+  .comentarios .comentario img, .comentarios .comentarioUltimo img {
+    width: 70px;
+    height: 70px;
+  }
+  .nombreComentario {
+    padding-bottom: 5px;
+  }
+  .textoComentario {
+    font-size: 14px;
+  }
+  .enviarComentario {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+  .enviarComentario form .dejarComentario {
+    width: 100%;
+  }
+  .enviarComentario form .bArticulo {
+    margin-left: 0px;
+  }
+  .infoContacto {
+    width: 100%;
+    margin: 0px;
+    padding: 25px 15px;
+  }
+  .infoContacto .datosContacto {
+    padding-bottom: 35px;
+  }
+  .enviarContacto {
+    width: 100%;
+    margin: 0px;
+    padding: 25px 25px 37px 15px;
+  }
+  .enviarContacto form div .nYaInput {
+    width: 100%;
+  }
+  .enviarContacto form .emailTel div .emailContacto, .enviarContacto form .emailTel div .telContacto {
+    width: 100%;
+  }
+  .enviarContacto form div .mensajeContacto {
+    width: 100%;
+    font-size: 12px;
+  }
+  .enviarContacto form input {
+    font-size: 12px;
+  }
+  .enviarContacto form .enviarBoton {
+    width: 100%;
+    height: 40px;
   }
 }
 
